@@ -11,16 +11,16 @@ graph:
   m: 3               # Number of edges to attach for barabasi_albert
 
 # SIR dynamics parameters
-beta: 0.3            # Infection probability (per edge, per timestep)
-gamma: 0.1           # Recovery probability (per infected node, per timestep)
+beta: 0.02           # Infection probability (per edge, per timestep) - Very slow spread
+gamma: 0.01          # Recovery probability (per infected node, per timestep) - Very slow recovery
 
 # Initial conditions
-initial_infected_frac: 0.02  # Fraction of nodes initially infected
+initial_infected_frac: 0.004  # Fraction of nodes initially infected - Just 2 nodes in 500
 
 # Collapse conditions
 collapse:
-  infected_frac: 0.4         # Collapse if infected fraction >= this
-  susceptible_frac: 0.05     # Collapse if susceptible fraction <= this
+  infected_frac: 0.6         # Collapse if infected fraction >= this - Much higher threshold
+  susceptible_frac: 0.02     # Collapse if susceptible fraction <= this
 
 # Simulation parameters
 max_steps: 200       # Maximum timesteps before stopping

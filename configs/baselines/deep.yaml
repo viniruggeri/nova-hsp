@@ -1,0 +1,49 @@
+# Deep learning & hybrid baselines
+random_forest:
+  enabled: true
+  n_estimators: 100
+  max_depth: 12
+  random_state: 0
+
+lstm:
+  enabled: true
+  input_dim: 10      # filled dynamically from world.observe() shape
+  hidden_dim: 64
+  n_layers: 2
+  dropout: 0.1
+  lr: 1e-3
+  batch_size: 32
+  epochs: 5
+
+tcn:
+  enabled: false
+  input_dim: 10
+  num_levels: 3
+  hidden_dim: 64
+  lr: 1e-3
+  epochs: 5
+
+autoencoder:
+  enabled: true
+  latent_dim: 16
+  encoder_hidden: [64,32]
+  decoder_hidden: [32,64]
+  lr: 1e-3
+  batch_size: 64
+  epochs: 10
+
+vae:
+  enabled: false
+  latent_dim: 16
+  encoder_hidden: [64,32]
+  decoder_hidden: [32,64]
+  beta: 1.0
+  lr: 1e-3
+  epochs: 10
+
+deep_hazard:
+  enabled: true
+  type: deepsurv    # or 'rnn_hazard'
+  hidden_dims: [64,32]
+  lr: 1e-3
+  epochs: 10

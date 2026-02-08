@@ -1,0 +1,12 @@
+# Survival classical baselines (Kaplan, Cox, AFT)
+kaplan_meier:
+  enabled: true
+
+cox:
+  enabled: true
+  l2_regularization: 1.0
+  max_iter: 100
+
+aft:
+  enabled: true
+  dist: lognormal   # options: lognormal, weibull

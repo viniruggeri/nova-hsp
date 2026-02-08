@@ -1,0 +1,51 @@
+Dataset Generation Report: ant_colony
+================================================================================
+
+TRAIN Split
+----------------------------------------
+Total runs: 50
+Failed runs: 0
+Collapsed: 50 (100.0%)
+
+Collapse Time Statistics:
+  Mean: 41.50
+  Std:  2.16
+  Min:  37
+  Max:  46
+
+VAL Split
+----------------------------------------
+Total runs: 20
+Failed runs: 0
+Collapsed: 20 (100.0%)
+
+Collapse Time Statistics:
+  Mean: 41.80
+  Std:  2.76
+  Min:  37
+  Max:  48
+
+TEST Split
+----------------------------------------
+Total runs: 30
+Failed runs: 0
+Collapsed: 30 (100.0%)
+
+Collapse Time Statistics:
+  Mean: 41.10
+  Std:  3.01
+  Min:  34
+  Max:  51
+
+================================================================================
+Data Format:
+  - obs.npy: (T, F) array of observations
+  - time_to_event.npy: (T,) array of remaining time
+  - events.json: T_event and event_indicator
+  - survival_record.csv: per-timestep features and labels
+  - meta.json: run metadata
+
+Aggregate files:
+  - {split}.csv: run-level summaries
+  - all_runs.csv: concatenated survival records
+  - labels_horizon_{H}_{split}.csv: classification labels

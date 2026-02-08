@@ -1,0 +1,12 @@
+# Heuristic baselines and early-warning signals
+threshold_score:
+  enabled: true
+  weights: [1.0, 1.0, 1.0]   # weights for observed features (configurable)
+  threshold: 0.5
+  persistence_K: 3
+
+ews:
+  enabled: true
+  window: 20
+  metrics: [variance, autocorrelation]
+  threshold_z: 2.0

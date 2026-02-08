@@ -1,0 +1,28 @@
+{
+  "seed": 60,
+  "run_id": "ant_colony_seed_60",
+  "n_timesteps": 44,
+  "n_features": 4,
+  "collapsed": true,
+  "T_event": 43,
+  "cfg": {
+    "n_cells": 100,
+    "n_ants": 200,
+    "graph": {
+      "type": "grid",
+      "grid_size": 10,
+      "k_neighbors": 4
+    },
+    "initial_resource": 100.0,
+    "consumption_rate": 2.0,
+    "replenish_rate": 1.5,
+    "movement_prob": 0.3,
+    "collapse": {
+      "resource_threshold": 50.0,
+      "starving_frac": 0.6
+    },
+    "max_steps": 200,
+    "seed": 0,
+    "name": "ant_colony"
+  }
+}

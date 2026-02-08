@@ -1,0 +1,10 @@
+# State / Markov baselines
+hmm:
+  enabled: true
+  n_states: 3                # stable / critical / collapse
+  n_iter: 100
+
+markov_chain:
+  enabled: true
+  n_states: 3
+  smoothing: 1e-6
