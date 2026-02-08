@@ -1,0 +1,29 @@
+# SIR Graph World Configuration
+# Epidemiological SIR model on a graph network
+
+# Population size
+population: 500
+
+# Graph structure
+graph:
+  type: erdos_renyi  # Options: erdos_renyi, barabasi_albert
+  p_edge: 0.05       # Edge probability for erdos_renyi
+  m: 3               # Number of edges to attach for barabasi_albert
+
+# SIR dynamics parameters
+beta: 0.3            # Infection probability (per edge, per timestep)
+gamma: 0.1           # Recovery probability (per infected node, per timestep)
+
+# Initial conditions
+initial_infected_frac: 0.02  # Fraction of nodes initially infected
+
+# Collapse conditions
+collapse:
+  infected_frac: 0.4         # Collapse if infected fraction >= this
+  susceptible_frac: 0.05     # Collapse if susceptible fraction <= this
+
+# Simulation parameters
+max_steps: 200       # Maximum timesteps before stopping
+
+# Seeds for reproducibility
+seed: 0

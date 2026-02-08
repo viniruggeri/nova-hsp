@@ -1,0 +1,31 @@
+# Ant Colony World Configuration
+# Agent-based model of ant colony with resource dynamics
+
+# Colony structure
+n_cells: 100         # Number of cells/locations
+n_ants: 200          # Number of ants in the colony
+
+# Graph structure
+graph:
+  type: grid         # Options: grid, random
+  grid_size: 10      # For grid: creates 10x10 grid
+  k_neighbors: 4     # For random: degree of connectivity
+
+# Resource parameters
+initial_resource: 100.0      # Starting resource level per cell
+consumption_rate: 2.0        # Resource consumed per ant per timestep
+replenish_rate: 1.5          # Resource added per cell per timestep
+
+# Ant behavior
+movement_prob: 0.3           # Probability ant moves to neighbor cell
+
+# Collapse conditions
+collapse:
+  resource_threshold: 50.0   # Collapse if total resources <= this
+  starving_frac: 0.6         # Collapse if starving fraction >= this
+
+# Simulation parameters
+max_steps: 200       # Maximum timesteps before stopping
+
+# Seeds for reproducibility
+seed: 0
