@@ -1,0 +1,27 @@
+{
+  "world": "ant_colony",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "timestamp": "2026-02-08T17:42:08.667155",
+  "models": {
+    "mlp": {
+      "f1_mean": 0.0,
+      "f1_std": 0.0,
+      "auc_roc_mean": 0.5,
+      "auc_roc_std": 0.0,
+      "pr_auc_mean": 0.5,
+      "pr_auc_std": 0.0
+    },
+    "ridge": {
+      "rmse_mean": 0.0,
+      "rmse_std": 0.0,
+      "mae_mean": 0.0,
+      "mae_std": 0.0
+    }
+  }
+}

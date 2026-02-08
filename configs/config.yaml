@@ -1,0 +1,18 @@
+# Main configuration file for nova-hsp experiments
+world: ant_colony
+device: auto
+seed: 42
+
+# Paths (relative to project root)
+data_dir: data
+results_dir: results
+config_dir: configs
+
+# Logging
+logging:
+  level: INFO
+  format: "[%(asctime)s] [%(levelname)s] %(message)s"
+
+# Baseline configurations (will be merged with individual baseline configs)
+baselines:
+  _target_: null  # Placeholder for hydra

@@ -46,7 +46,7 @@ numba = "^0.59"
 
 [[tool.poetry.source]]
 name = "pytorch-cuda"
-url = "https://download.pytorch.org/whl/cu129"
+url = "https://download.pytorch.org/whl/cu121"
 priority = "explicit"
 
 

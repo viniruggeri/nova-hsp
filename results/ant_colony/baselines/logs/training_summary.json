@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-02-08T17:05:07.261749",
+  "world": "ant_colony",
+  "train_samples": 50,
+  "models": [
+    "random_forest",
+    "deep_hazard",
+    "kaplan_meier",
+    "cox",
+    "aft",
+    "hmm",
+    "markov_chain",
+    "threshold_heuristic",
+    "ews"
+  ]
+}
