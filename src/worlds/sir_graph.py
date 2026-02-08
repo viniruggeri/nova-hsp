@@ -60,6 +60,7 @@ class SirGraph(BaseWorld):
         self.graph = None
         self.states = None
         self._avg_degree = None
+        self.population = None  # Number of nodes in graph
 
     def reset(self, seed: int) -> None:
         """Reset SIR model with given seed."""
@@ -80,6 +81,9 @@ class SirGraph(BaseWorld):
 
         # Cache average degree (static for this graph)
         self._avg_degree = np.mean([deg for _, deg in self.graph.degree()])
+
+        # Store population
+        self.population = population
 
         # Initialize all nodes as susceptible
         self.states = np.zeros(population, dtype=np.int8)
@@ -126,8 +130,6 @@ class SirGraph(BaseWorld):
         Returns:
             Dictionary with state fractions and graph metrics.
         """
-        population = len(self.states)
-
         s_count = np.sum(self.states == self.SUSCEPTIBLE)
         i_count = np.sum(self.states == self.INFECTED)
         r_count = np.sum(self.states == self.RECOVERED)
@@ -141,9 +143,9 @@ class SirGraph(BaseWorld):
             n_infected_clusters = 0
 
         return {
-            "S_frac": s_count / population,
-            "I_frac": i_count / population,
-            "R_frac": r_count / population,
+            "S_frac": s_count / self.population,
+            "I_frac": i_count / self.population,
+            "R_frac": r_count / self.population,
             "avg_degree": self._avg_degree,
             "n_infected_clusters": float(n_infected_clusters),
         }
@@ -158,9 +160,8 @@ class SirGraph(BaseWorld):
         if self.collapsed:
             return True, self.collapse_timestep
 
-        population = len(self.states)
-        i_frac = np.sum(self.states == self.INFECTED) / population
-        s_frac = np.sum(self.states == self.SUSCEPTIBLE) / population
+        i_frac = np.sum(self.states == self.INFECTED) / self.population
+        s_frac = np.sum(self.states == self.SUSCEPTIBLE) / self.population
 
         # Check collapse conditions
         if i_frac >= self.cfg.collapse.infected_frac:

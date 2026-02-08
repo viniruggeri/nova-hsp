@@ -4378,6 +4378,21 @@ tests = ["autopep8", "isort", "llnl-hatchet", "numpy", "pytest", "pytest-forked"
 tutorials = ["matplotlib", "pandas", "tabulate"]
 
 [[package]]
+name = "types-networkx"
+version = "3.6.1.20251220"
+description = "Typing stubs for networkx"
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "types_networkx-3.6.1.20251220-py3-none-any.whl", hash = "sha256:417ccbe7841f335a4c2b8e7515c3bc97a00fb5f686f399a763ef64392b209eac"},
+    {file = "types_networkx-3.6.1.20251220.tar.gz", hash = "sha256:caf95e0d7777b969e50ceeb2c430d9d4dfe6b7bdee43c42dc9879a2d4408a790"},
+]
+
+[package.dependencies]
+numpy = ">=1.20"
+
+[[package]]
 name = "typing-extensions"
 version = "4.15.0"
 description = "Backported and Experimental Type Hints for Python 3.9+"
@@ -4830,4 +4845,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.13"
-content-hash = "8e2b41e8d1ac0272945e7d5e4cefb929c663c55da27cd9827b62b8cae0b458f3"
+content-hash = "6d8eca164763f2a0413d73bf88735a23bafe520d0fd1fdbce4ac1317784d0462"

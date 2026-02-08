@@ -58,6 +58,8 @@ class AntColony(BaseWorld):
         self.resources = None  # Resource per cell
         self.ant_positions = None  # Ant locations (cell indices)
         self._avg_degree = None
+        self.n_cells = None  # Actual number of cells (may differ from cfg)
+        self.n_ants = None  # Number of ants
 
     def reset(self, seed: int) -> None:
         """Reset ant colony with given seed."""
@@ -77,10 +79,8 @@ class AntColony(BaseWorld):
             self.graph = nx.grid_2d_graph(grid_size, grid_size)
             # Relabel nodes to integers
             self.graph = nx.convert_node_labels_to_integers(self.graph)
-            # Adjust n_cells if needed
-            if self.graph.number_of_nodes() != n_cells:
-                self.cfg.n_cells = self.graph.number_of_nodes()
-                n_cells = self.cfg.n_cells
+            # Store actual n_cells (may differ from config due to grid sizing)
+            n_cells = self.graph.number_of_nodes()
 
         elif graph_type == "random":
             # Create random regular graph
@@ -104,6 +104,10 @@ class AntColony(BaseWorld):
         # Cache average degree
         self._avg_degree = np.mean([deg for _, deg in self.graph.degree()])
 
+        # Store actual dimensions
+        self.n_cells = n_cells
+        self.n_ants = n_ants
+
         # Initialize resources
         self.resources = np.full(n_cells, self.cfg.initial_resource, dtype=np.float32)
 
@@ -114,9 +118,6 @@ class AntColony(BaseWorld):
         """Advance ant colony dynamics by one timestep."""
         if self.collapsed:
             return
-
-        n_cells = self.cfg.n_cells
-        n_ants = self.cfg.n_ants
 
         # 1. Ant movement: ants move to neighboring cells with movement_prob
         new_positions = self.ant_positions.copy()
@@ -130,7 +131,7 @@ class AntColony(BaseWorld):
         self.ant_positions = new_positions
 
         # 2. Resource consumption: ants consume resources from their cells
-        for cell in range(n_cells):
+        for cell in range(self.n_cells):
             ants_in_cell = np.sum(self.ant_positions == cell)
             consumption = ants_in_cell * self.cfg.consumption_rate
             self.resources[cell] = max(0.0, self.resources[cell] - consumption)
@@ -153,9 +154,6 @@ class AntColony(BaseWorld):
         Returns:
             Dictionary with resource and ant metrics.
         """
-        n_cells = self.cfg.n_cells
-        n_ants = self.cfg.n_ants
-
         total_resource = float(np.sum(self.resources))
         avg_resource = float(np.mean(self.resources))
 
@@ -165,7 +163,7 @@ class AntColony(BaseWorld):
             if self.resources[ant_pos] < self.cfg.consumption_rate:
                 starving_count += 1
 
-        starving_frac = starving_count / n_ants if n_ants > 0 else 0.0
+        starving_frac = starving_count / self.n_ants if self.n_ants > 0 else 0.0
 
         # Average degree of cells where ants are located
         ant_unique_positions = np.unique(self.ant_positions)
@@ -200,7 +198,7 @@ class AntColony(BaseWorld):
             if self.resources[ant_pos] < self.cfg.consumption_rate:
                 starving_count += 1
 
-        starving_frac = starving_count / self.cfg.n_ants if self.cfg.n_ants > 0 else 0.0
+        starving_frac = starving_count / self.n_ants if self.n_ants > 0 else 0.0
 
         # Check collapse conditions
         if total_resource <= self.cfg.collapse.resource_threshold:
