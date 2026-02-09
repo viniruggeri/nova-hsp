@@ -296,12 +296,12 @@ All components have validation scripts:
 
 ```bash
 # Test individual components
-python scripts/test_advanced_metrics.py
-python scripts/test_aggregation.py
-python scripts/test_visualizations.py
+python tests/evaluation/test_advanced_metrics.py
+python tests/evaluation/test_aggregation.py
+python tests/visualization/test_paper_plots.py
 
 # Test complete pipeline
-python scripts/test_complete_pipeline.py
+python tests/evaluation/test_complete_pipeline.py
 ```
 
 ---
