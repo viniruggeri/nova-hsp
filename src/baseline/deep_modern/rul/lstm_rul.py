@@ -38,3 +38,6 @@ class LSTMRUL(nn.Module):
         last_hidden = out[:, -1, :]
         last_hidden = self.norm(last_hidden)
         return self.head(last_hidden)
+    
+    
+#teste amem jesus agr da certo 5.0
