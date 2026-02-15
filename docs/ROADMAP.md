@@ -15,6 +15,24 @@ como early warning signal geométrico para transições críticas.
 O que temos: $S_t$ validado em notebooks (NB 09-11). O que falta: experimentos
 reproduzíveis com seeds, salvando resultados estruturados.
 
+### Definições Operacionais (fixar ANTES dos 90 runs)
+
+**Alert threshold.** Alerta em $t^*$ quando $S_t$ cruza um limiar adaptativo:
+$$t^* = \min\{t : S_t < \mu_0 - k\,\sigma_0\}$$
+onde $\mu_0, \sigma_0$ são média e desvio de $S_t$ nos primeiros 20% da série (baseline),
+e $k = 2$ (z-score). Justificativa: não requer tuning de threshold absoluto (como $\delta = 0.5$),
+é calibrado pela própria série, e é imune a diferenças de escala entre sistemas.
+
+**Lead time.** Distância temporal entre o alerta e a bifurcação:
+$$L = t_{\text{bif}} - t^*$$
+normalizado pela duração total da série: $L_{\text{norm}} = L / T$.
+Se o alerta nunca dispara → $L = 0$ (miss). Se dispara após a bifurcação → $L = 0$ (late).
+Isso garante métrica imune a tuning oportunista: o threshold é fixo ($k = 2$),
+a normalização remove dependência da escala temporal.
+
+**Persistência.** Para evitar alertas espúrios por ruído MC, exigir $S_t < \mu_0 - k\sigma_0$
+por $K = 3$ passos consecutivos antes de declarar alerta.
+
 ### Vini
 - [ ] `src/experiments/run_hsp_synthetic.py` — roda $S_t$ analítico nos 3 sistemas (SN, ECO, DW)
 - [ ] 10 seeds × 3 sistemas × 3 valores de σ = 90 runs
@@ -41,7 +59,10 @@ O ponto central do paper: $S_t$ funciona quando a dinâmica é **aprendida**, n�
 - [ ] Treinar `LSTMEncoder` + `LatentDynamicsMLP` no SIR Graph
   - Input: observações parciais (só infected count, não o grafo completo)
   - Output: $z_t$ latente → rollout → $S_t^{\text{learned}}$
-- [ ] **Teste de validação:** Spearman ρ($S_t^{\text{learned}}$, $S_t^{\text{analytical}}$) > 0.85
+- [ ] **Testes de validação (3 critérios):**
+  1. Spearman ρ($S_t^{\text{learned}}$, $S_t^{\text{analytical}}$) > 0.85
+  2. Monotonicity % do learned ≥ 75% (preserva ordering temporal)
+  3. Concordância de lead time: $|L_{\text{learned}} - L_{\text{analytical}}| < 0.05 T$ (alerta no mesmo momento)
 - [ ] Repetir no Ant Colony (2º sistema)
 - [ ] 3 ablations:
   - (a) sem encoder (identity) — observações cruas funcionam?
@@ -56,11 +77,12 @@ O ponto central do paper: $S_t$ funciona quando a dinâmica é **aprendida**, n�
 
 ### Checkpoint
 - [ ] Neural $S_t$ funciona em ≥ 2 sistemas
-- [ ] ρ > 0.85 entre learned e analytical
+- [ ] 3 critérios atendidos: ρ > 0.85, mono% ≥ 75%, concordância de lead time < 0.05T
 
 ### ⚠️ Risco
-Se Neural $S_t$ não atingir ρ > 0.85:
-- Paper ainda funciona como contribuição teórica + empírica (sem DL)
+Se Neural $S_t$ não atingir os 3 critérios:
+- Relaxar primeiro: mono% ≥ 60% + ρ > 0.75 ainda é publicável com caveats
+- Se nem isso: paper funciona como contribuição teórica + empírica (sem DL)
 - Foco muda: "aqui está a métrica + prova + experimentos analíticos"
 - Ainda é publicável — Basin Stability (Menck 2013, Nature Physics) não tinha DL
 
@@ -73,6 +95,9 @@ Se Neural $S_t$ não atingir ρ > 0.85:
 - [ ] Experimento final: $S_t$ (analítico + learned) vs 5 baselines vs Cox PH
 - [ ] 10 seeds por configuração
 - [ ] Wilcoxon signed-rank test para lead time (p < 0.05)
+- [ ] **Effect size:** Cliff's delta para cada par ($S_t$ vs baseline)
+  - $|\delta| > 0.474$: large effect → diferença prática, não só estatística
+  - Reportar na Table 3 junto com p-value (reviewer vai perguntar)
 - [ ] Sensitivity analysis com configs prontas:
   - σ sweep: [0.01, 0.03, 0.05, 0.10, 0.20]
   - H sweep: [20, 40, 60, 80, 100]
@@ -85,7 +110,8 @@ Se Neural $S_t$ não atingir ρ > 0.85:
 
 ### Checkpoint
 - [ ] Todas as tables prontas
-- [ ] Significância estatística confirmada
+- [ ] Significância estatística confirmada (p < 0.05)
+- [ ] Effect size confirmado (Cliff's δ large em ≥ 3/5 baselines)
 
 ---
 
@@ -176,8 +202,8 @@ Total: ~10 páginas + appendix
 | Table | Conteúdo | Sprint |
 |-------|----------|--------|
 | **1** | $S_t$ analítico: ρ(S,W), mono%, lead time × 3 sistemas | 1 |
-| **2** | $S_t$ learned vs analytical: ρ entre eles, ρ(S,W) do learned | 2 |
-| **3** | Main comparison: $S_t$ vs 5 EWS vs Cox PH (lead time + separability) | 3 |
+| **2** | $S_t$ learned vs analytical: ρ, mono%, concordância de lead time | 2 |
+| **3** | Main comparison: $S_t$ vs 5 EWS vs Cox PH (lead time + separability + Cliff's δ) | 3 |
 | **4** | Ablation: encoder × dynamics × perturbation | 3 |
 | **5** | Sensitivity: σ, H, N sweeps | 3 |
 
@@ -215,4 +241,4 @@ Total: ~10 páginas + appendix
 
 ---
 
-*Última atualização: 14 Feb 2026*
+*Última atualização: 14 Feb 2026 (rev 2 — definições operacionais, critérios estruturais, effect size)*

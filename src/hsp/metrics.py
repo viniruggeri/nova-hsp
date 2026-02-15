@@ -127,8 +127,12 @@ def violation_anatomy(
         "n_monotone": int((~viol_mask).sum()),
         "violation_mean": float(violations.mean()) if len(violations) > 0 else 0.0,
         "violation_max": float(violations.max()) if len(violations) > 0 else 0.0,
-        "median_tau_violations": float(np.median(tau_viol)) if len(tau_viol) > 0 else float("nan"),
-        "median_tau_monotone": float(np.median(tau_ok)) if len(tau_ok) > 0 else float("nan"),
+        "median_tau_violations": (
+            float(np.median(tau_viol)) if len(tau_viol) > 0 else float("nan")
+        ),
+        "median_tau_monotone": (
+            float(np.median(tau_ok)) if len(tau_ok) > 0 else float("nan")
+        ),
     }
 
     # Correlation: violations larger near bifurcation?

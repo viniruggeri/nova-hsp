@@ -32,7 +32,12 @@ def main():
     parser.add_argument(
         "--metrics",
         nargs="+",
-        default=["basin_contraction_corr", "lead_time_norm", "monotonicity_frac", "separability_auc"],
+        default=[
+            "basin_contraction_corr",
+            "lead_time_norm",
+            "monotonicity_frac",
+            "separability_auc",
+        ],
         help="Metrics to include in analysis",
     )
     parser.add_argument("--latex", action="store_true", help="Generate LaTeX tables")

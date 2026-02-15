@@ -464,7 +464,11 @@ class PaperVisualizer:
         performance_results: pd.DataFrame,
         robustness_results: Optional[pd.DataFrame] = None,
         output_dir: Path = Path("results/figures"),
-        metrics: List[str] = ["basin_contraction_corr", "lead_time_norm", "monotonicity_frac"],
+        metrics: List[str] = [
+            "basin_contraction_corr",
+            "lead_time_norm",
+            "monotonicity_frac",
+        ],
     ):
         """
         Generate complete set of publication-ready plots.
