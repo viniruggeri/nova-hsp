@@ -121,9 +121,7 @@ class TransformerEncoder(nn.Module):
             dropout=dropout,
             batch_first=True,
         )
-        self.transformer = nn.TransformerEncoder(
-            encoder_layer, num_layers=num_layers
-        )
+        self.transformer = nn.TransformerEncoder(encoder_layer, num_layers=num_layers)
         self.projection = nn.Linear(d_model, latent_dim)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
