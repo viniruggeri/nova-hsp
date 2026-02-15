@@ -1,8 +1,9 @@
 """Test complete evaluation pipeline with advanced metrics."""
+
 import sys
 import numpy as np
 
-sys.stdout.reconfigure(encoding='utf-8')
+sys.stdout.reconfigure(encoding="utf-8")
 
 from src.evaluation.integration import IntegratedEvaluator
 from src.baseline.survival.kaplan_meier import KaplanMeierModel
@@ -28,17 +29,12 @@ km.fit(T, E)
 cox = CoxPHModel()
 cox.fit(X[:, -1, :], T, E)  # Use last timestep features
 
-models = {'KM': km, 'CoxPH': cox}
+models = {"KM": km, "CoxPH": cox}
 print(f"Models: {list(models.keys())}")
 
 # Create evaluator
 evaluator = IntegratedEvaluator(
-    models=models,
-    X=X,
-    T=T,
-    E=E,
-    perturbation_types=['gaussian_noise'],
-    n_folds=3
+    models=models, X=X, T=T, E=E, perturbation_types=["gaussian_noise"], n_folds=3
 )
 print("[OK] IntegratedEvaluator initialized")
 
@@ -52,12 +48,18 @@ print(f"   Integrated: {integrated.shape}")
 # Test 2: With advanced metrics
 print("\n2. Evaluation with Advanced Metrics...")
 try:
-    perf_adv, rob_adv, int_adv = evaluator.evaluate_all(include_cv=False, include_advanced=True)
+    perf_adv, rob_adv, int_adv = evaluator.evaluate_all(
+        include_cv=False, include_advanced=True
+    )
     print(f"   Performance (with C-index): {perf_adv.shape}")
-    
-    if 'c_index' in perf_adv.columns:
+
+    if "c_index" in perf_adv.columns:
         print("\n   Advanced Metrics:")
-        print(perf_adv[['model_name', 'MAE', 'c_index', 'c_index_ipcw']].to_string(index=False))
+        print(
+            perf_adv[["model_name", "MAE", "c_index", "c_index_ipcw"]].to_string(
+                index=False
+            )
+        )
     else:
         print("   [WARN] C-index not computed")
 except Exception as e:
@@ -69,7 +71,12 @@ try:
     advanced = evaluator.evaluate_advanced_survival_metrics(compute_ipcw=True)
     print(f"   Shape: {advanced.shape}")
     if not advanced.empty:
-        print("\n" + advanced[['model_name', 'c_index', 'c_index_ipcw', 'calibration_slope']].to_string(index=False))
+        print(
+            "\n"
+            + advanced[
+                ["model_name", "c_index", "c_index_ipcw", "calibration_slope"]
+            ].to_string(index=False)
+        )
 except Exception as e:
     print(f"   [ERROR] {e}")
 

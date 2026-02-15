@@ -1,9 +1,10 @@
 """Very simple integration test."""
+
 import sys
 import numpy as np
 
-# Workaround for Windows console encoding  
-sys.stdout.reconfigure(encoding='utf-8')
+# Workaround for Windows console encoding
+sys.stdout.reconfigure(encoding="utf-8")
 
 from src.evaluation.integration import IntegratedEvaluator
 from src.baseline.survival.kaplan_meier import KaplanMeierModel
@@ -21,18 +22,20 @@ km.fit(T, E)
 lt = LinearThresholdHeuristic(threshold=0.5, k_steps=2)
 lt.fit(X, T)
 
-models = {'KM': km, 'LinearThreshold': lt}
+models = {"KM": km, "LinearThreshold": lt}
 
 # Create evaluator
-evaluator = IntegratedEvaluator(models=models, X=X, T=T, E=E, perturbation_types=['gaussian_noise'])
+evaluator = IntegratedEvaluator(
+    models=models, X=X, T=T, E=E, perturbation_types=["gaussian_noise"]
+)
 
 # Test 1: Performance
 print("Test 1: Performance")
 perf = evaluator.evaluate_performance()
 print(f"Shape: {perf.shape}, Columns: {list(perf.columns)[:5]}")
-print(perf[['model_name']].to_string(index=False))
+print(perf[["model_name"]].to_string(index=False))
 
-# Test 2: Robustness  
+# Test 2: Robustness
 print("\nTest 2: Robustness")
 rob = evaluator.evaluate_robustness()
 print(f"Shape: {rob.shape}")

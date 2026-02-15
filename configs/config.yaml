@@ -1,6 +1,9 @@
-# Main configuration file for nova-hsp experiments
-world: ant_colony
-device: auto
+# HSP v3 — Main configuration
+# Basin Access Probability for Early Warning of Critical Transitions
+
+world: sir_graph             # sir_graph | ant_colony | real_dataset
+hsp_config: base             # base | stochastic | ablation_no_gnn | ablation_no_sampling
+device: auto                 # auto | cpu | cuda
 seed: 42
 
 # Paths (relative to project root)
@@ -13,6 +16,21 @@ logging:
   level: INFO
   format: "[%(asctime)s] [%(levelname)s] %(message)s"
 
-# Baseline configurations (will be merged with individual baseline configs)
+# Metrics to compute
+metrics:
+  - basin_contraction_correlation
+  - lead_time
+  - monotonicity_fraction
+  - separability_score
+
+# Baseline configurations (Patrick's sprint)
 baselines:
-  _target_: null  # Placeholder for hydra
+  ews:
+    - rolling_variance
+    - ac1
+    - skewness
+    - dfa
+  structural:
+    - basin_stability
+  survival:
+    - cox_ph

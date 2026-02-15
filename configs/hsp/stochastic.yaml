@@ -1,0 +1,20 @@
+# HSP v3 — Stochastic variant
+# Higher rollout count, multiple perturbation scales
+
+_base_: base.yaml
+
+# Increase MC samples for tighter confidence intervals
+basin_access:
+  n_rollouts: 1000
+  horizon: 100
+  step: 3
+
+# Multi-scale perturbation sweep
+perturbation:
+  type: gaussian
+  std: [0.01, 0.03, 0.05, 0.1]   # Run S_t at multiple σ
+
+# Stricter detection
+detector:
+  threshold: 0.4
+  persistence: 5

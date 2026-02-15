@@ -1,0 +1,14 @@
+# HSP v3 — Ablation: No perturbation sampling
+# Single-point rollout (N=1, ε=0) — removes Monte Carlo estimation
+# Tests whether stochastic basin probing is necessary
+
+_base_: base.yaml
+
+perturbation:
+  type: gaussian
+  std: 0.0                # No perturbation — deterministic rollout
+
+basin_access:
+  n_rollouts: 1           # Single trajectory (no MC)
+  horizon: 80
+  step: 5

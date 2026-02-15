@@ -18,7 +18,9 @@ _device = None
 _device_info = None
 
 
-def get_device(force_cpu: bool = False, device_id: Optional[int] = None) -> torch.device:
+def get_device(
+    force_cpu: bool = False, device_id: Optional[int] = None
+) -> torch.device:
     """
     Get PyTorch device (CUDA GPU or CPU) with automatic detection.
 

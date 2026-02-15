@@ -1,0 +1,56 @@
+# HSP v3 — Base configuration
+# Basin Access Probability framework
+
+# --- Encoder ---
+encoder:
+  type: identity          # identity | lstm | transformer
+  # For learned encoders:
+  input_dim: null         # Set per dataset
+  latent_dim: 32
+  # LSTM-specific:
+  lstm_layers: 2
+  lstm_hidden: 64
+  # Transformer-specific:
+  n_heads: 4
+  n_layers: 2
+  d_model: 64
+  dropout: 0.1
+
+# --- Dynamics ---
+dynamics:
+  type: identity          # identity | mlp | residual | neural_ode
+  # For learned dynamics:
+  hidden_dims: [64, 64]
+  activation: tanh        # relu | tanh | gelu
+  # NeuralODE-specific:
+  solver: dopri5
+  rtol: 1.0e-5
+  atol: 1.0e-5
+
+# --- Perturbation ---
+perturbation:
+  type: gaussian          # gaussian | uniform_ball
+  std: 0.05               # Gaussian σ
+  radius: 0.15            # Uniform ball radius (3σ default)
+
+# --- Basin Access ---
+basin_access:
+  n_rollouts: 300         # Monte Carlo samples N
+  horizon: 80             # Rollout horizon H
+  step: 5                 # Evaluate every k steps
+  survival_threshold: null  # System-specific, set per world
+
+# --- Detector ---
+detector:
+  threshold: 0.5          # δ: S_t < δ → "at risk"
+  persistence: 3           # K: consecutive steps below δ to trigger alert
+
+# --- Training (for learned encoder/dynamics) ---
+training:
+  epochs: 200
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  batch_size: 32
+  patience: 20            # Early stopping patience
+  scheduler: cosine       # cosine | step | none
+  grad_clip: 1.0

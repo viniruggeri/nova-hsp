@@ -1,0 +1,19 @@
+# HSP v3 — Ablation: No learned dynamics
+# Uses analytical dynamics (identity) even on real data
+# Tests whether S_t signal comes from dynamics model or from geometry
+
+_base_: base.yaml
+
+encoder:
+  type: lstm              # Still encode observations
+  latent_dim: 32
+  lstm_layers: 2
+  lstm_hidden: 64
+
+dynamics:
+  type: identity          # No learned dynamics — raw encoder output
+  
+basin_access:
+  n_rollouts: 300
+  horizon: 50             # Shorter horizon since no dynamics model
+  step: 5

@@ -66,7 +66,9 @@ def plot_dataset_qc(world_name: str, output_dir: Path = None):
 
     ax1.set_xlabel("Collapse Time (T_event)", fontsize=12)
     ax1.set_ylabel("Count", fontsize=12)
-    ax1.set_title(f"{world_name}: Distribution of Collapse Times", fontsize=14, fontweight="bold")
+    ax1.set_title(
+        f"{world_name}: Distribution of Collapse Times", fontsize=14, fontweight="bold"
+    )
     ax1.legend()
     ax1.grid(True, alpha=0.3)
 
@@ -120,7 +122,15 @@ def plot_dataset_qc(world_name: str, output_dir: Path = None):
 
     table = ax3.table(
         cellText=stats_data,
-        colLabels=["Split", "N Runs", "N Collapsed", "Mean T", "Std T", "Min T", "Max T"],
+        colLabels=[
+            "Split",
+            "N Runs",
+            "N Collapsed",
+            "Mean T",
+            "Std T",
+            "Min T",
+            "Max T",
+        ],
         cellLoc="center",
         loc="center",
         bbox=[0, 0, 1, 1],
@@ -157,7 +167,11 @@ def plot_dataset_qc(world_name: str, output_dir: Path = None):
             # Plot first feature
             ax4.plot(
                 obs[:, 0],
-                label=f"Seed {seed} (T_event={T_event})" if T_event else f"Seed {seed} (censored)",
+                label=(
+                    f"Seed {seed} (T_event={T_event})"
+                    if T_event
+                    else f"Seed {seed} (censored)"
+                ),
                 alpha=0.7,
                 linewidth=2,
             )
@@ -187,18 +201,24 @@ def plot_dataset_qc(world_name: str, output_dir: Path = None):
         all_df = pd.concat([train_df, val_df, test_df], keys=["train", "val", "test"])
 
         f.write(f"Total runs: {len(all_df)}\n")
-        f.write(f"Total collapsed: {all_df['collapsed'].sum()} ({all_df['collapsed'].mean():.1%})\n\n")
+        f.write(
+            f"Total collapsed: {all_df['collapsed'].sum()} ({all_df['collapsed'].mean():.1%})\n\n"
+        )
 
         for split, df in [("Train", train_df), ("Val", val_df), ("Test", test_df)]:
             f.write(f"{split}:\n")
             f.write(f"  Runs: {len(df)}\n")
-            f.write(f"  Collapsed: {df['collapsed'].sum()} ({df['collapsed'].mean():.1%})\n")
+            f.write(
+                f"  Collapsed: {df['collapsed'].sum()} ({df['collapsed'].mean():.1%})\n"
+            )
 
             collapsed_df = df[df["collapsed"] & df["T_event"].notna()]
             if len(collapsed_df) > 0:
                 f.write(f"  T_event mean: {collapsed_df['T_event'].mean():.2f}\n")
                 f.write(f"  T_event std: {collapsed_df['T_event'].std():.2f}\n")
-                f.write(f"  T_event range: [{collapsed_df['T_event'].min():.0f}, {collapsed_df['T_event'].max():.0f}]\n")
+                f.write(
+                    f"  T_event range: [{collapsed_df['T_event'].min():.0f}, {collapsed_df['T_event'].max():.0f}]\n"
+                )
             f.write("\n")
 
     print(f"✓ Saved QC report: {report_file}")
@@ -206,7 +226,9 @@ def plot_dataset_qc(world_name: str, output_dir: Path = None):
 
 def main():
     """Main entry point."""
-    parser = argparse.ArgumentParser(description="Generate sanity check plots for datasets")
+    parser = argparse.ArgumentParser(
+        description="Generate sanity check plots for datasets"
+    )
     parser.add_argument(
         "--world",
         type=str,

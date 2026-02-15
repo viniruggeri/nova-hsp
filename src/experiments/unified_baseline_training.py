@@ -90,7 +90,7 @@ class UnifiedBaselineTrainer:
         def load_split(meta_df, labels_df, split_dir):
             """Load features from split directory."""
             features, labels, times = [], [], []
-            
+
             for _, row in meta_df.iterrows():
                 seed = row["seed"]
                 run_dir = data_path / split_dir / f"run_{seed}"
@@ -162,17 +162,21 @@ class UnifiedBaselineTrainer:
         # =====================================================================
         # Deep Learning Baselines
         # =====================================================================
-        
+
         if self.configs.get("deep", {}).get("random_forest", {}).get("enabled"):
             logger.info("Training Random Forest...")
             model = RandomForestClassifier(
-                n_estimators=self.configs["deep"]["random_forest"].get("n_estimators", 100),
+                n_estimators=self.configs["deep"]["random_forest"].get(
+                    "n_estimators", 100
+                ),
                 max_depth=self.configs["deep"]["random_forest"].get("max_depth", 12),
                 n_jobs=-1,
             )
             model.fit(X_train_flat, y_train)
             self.trained_models["random_forest"] = model
-            logger.info(f"✓ Random Forest (Train Acc: {model.score(X_train_flat, y_train):.4f})")
+            logger.info(
+                f"✓ Random Forest (Train Acc: {model.score(X_train_flat, y_train):.4f})"
+            )
 
         if self.configs.get("deep", {}).get("deep_hazard", {}).get("enabled"):
             logger.info("Training Deep Hazard...")
@@ -234,8 +238,10 @@ class UnifiedBaselineTrainer:
             logger.info("Training Threshold Heuristic...")
             model = LinearThresholdHeuristic(
                 weights=np.ones(X_train_flat.shape[1]),
-                threshold=self.configs["heuristics"]["threshold_score"].get("threshold", 0.5),
-                k_steps=1
+                threshold=self.configs["heuristics"]["threshold_score"].get(
+                    "threshold", 0.5
+                ),
+                k_steps=1,
             )
             self.trained_models["threshold_heuristic"] = model
             logger.info("✓ Threshold Heuristic fitted")
@@ -275,6 +281,7 @@ class UnifiedBaselineTrainer:
 
         path = self.logs_dir / "training_summary.json"
         import json
+
         with open(path, "w") as f:
             json.dump(summary, f, indent=2)
 
@@ -310,9 +317,15 @@ def train_all_baselines(world_name: str = "ant_colony") -> None:
     project_root = Path(__file__).parent.parent.parent
     baseline_configs = {
         "deep": load_yaml_config(project_root / "configs" / "baselines" / "deep.yaml"),
-        "survival": load_yaml_config(project_root / "configs" / "baselines" / "survival.yaml"),
-        "state": load_yaml_config(project_root / "configs" / "baselines" / "state.yaml"),
-        "heuristics": load_yaml_config(project_root / "configs" / "baselines" / "heuristics.yaml"),
+        "survival": load_yaml_config(
+            project_root / "configs" / "baselines" / "survival.yaml"
+        ),
+        "state": load_yaml_config(
+            project_root / "configs" / "baselines" / "state.yaml"
+        ),
+        "heuristics": load_yaml_config(
+            project_root / "configs" / "baselines" / "heuristics.yaml"
+        ),
     }
 
     # Train
@@ -332,5 +345,6 @@ def train_all_baselines(world_name: str = "ant_colony") -> None:
 
 if __name__ == "__main__":
     import sys
+
     world = sys.argv[1] if len(sys.argv) > 1 else "ant_colony"
     train_all_baselines(world)

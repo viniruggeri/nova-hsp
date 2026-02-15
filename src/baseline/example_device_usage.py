@@ -7,7 +7,12 @@ Shows how to integrate device.py in your training scripts.
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from src.utils.device import get_device, move_to_device, set_reproducible, print_device_info
+from src.utils.device import (
+    get_device,
+    move_to_device,
+    set_reproducible,
+    print_device_info,
+)
 
 
 class SimpleModel(nn.Module):

@@ -1,0 +1,27 @@
+# Metric: Robustness / Sensitivity Analysis
+# How stable is S_t under perturbation scale σ and MC samples N?
+
+metric: robustness
+
+# MC convergence test
+mc_convergence:
+  n_values: [50, 100, 300, 500, 1000]
+  n_trials: 5               # Repeat each N this many times
+  # Expected: std(S_t) ∝ 1/√N (CLT behavior)
+
+# Perturbation scale sensitivity
+perturbation_sensitivity:
+  std_values: [0.01, 0.02, 0.05, 0.10, 0.20]
+  n_rollouts: 500            # Fixed N for fair comparison
+  # Expected: S_t decreases monotonically with σ (A2 → larger ε = harder to survive)
+
+# Horizon sensitivity
+horizon_sensitivity:
+  horizons: [20, 40, 60, 80, 100, 150]
+  n_rollouts: 300
+  # Expected: S_t decreases with H (longer rollout = more time to diverge)
+
+# Separability: AUC for pre- vs post-collapse classification
+separability:
+  width_threshold: 0.10     # W > threshold → "basin exists"
+  expected_auc: 0.85         # Minimum expected AUC
