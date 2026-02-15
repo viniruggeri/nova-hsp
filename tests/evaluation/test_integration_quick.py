@@ -23,14 +23,14 @@ print(f"Data shape: X={X.shape}, T={T.shape}, E={E.shape}")
 
 # Initialize models
 models = {
-    'KM': KaplanMeierModel(),
-    'LinearThreshold': LinearThresholdHeuristic(threshold=0.5, k_steps=2)
+    "KM": KaplanMeierModel(),
+    "LinearThreshold": LinearThresholdHeuristic(threshold=0.5, k_steps=2),
 }
 
 # Fit models
 print("Fitting models...")
-models['KM'].fit(T, E)
-models['LinearThreshold'].fit(X, T)
+models["KM"].fit(T, E)
+models["LinearThreshold"].fit(X, T)
 print(f"Models fitted: {list(models.keys())}")
 
 # Initialize integrated evaluator
@@ -40,8 +40,8 @@ evaluator = IntegratedEvaluator(
     X=X,
     T=T,
     E=E,
-    perturbation_types=['gaussian_noise', 'feature_dropout'],
-    n_folds=3
+    perturbation_types=["gaussian_noise", "feature_dropout"],
+    n_folds=3,
 )
 print("   [OK] Initialized")
 
@@ -50,13 +50,18 @@ print("\n2. Evaluating performance...")
 perf_df = evaluator.evaluate_performance()
 print(f"   [OK] Performance results: {perf_df.shape}")
 print(f"   Columns: {list(perf_df.columns)}")
-print("\n" + perf_df[['model_name', 'MAE', 'RMSE']].to_string(index=False))
+print("\n" + perf_df[["model_name", "MAE", "RMSE"]].to_string(index=False))
 
 # Evaluate robustness
 print("\n3. Evaluating robustness...")
 rob_df = evaluator.evaluate_robustness()
 print(f"   [OK] Robustness results: {rob_df.shape}")
-print("\n" + rob_df.groupby(['model_name', 'perturbation_type'])['degradation_percent'].mean().to_string())
+print(
+    "\n"
+    + rob_df.groupby(["model_name", "perturbation_type"])["degradation_percent"]
+    .mean()
+    .to_string()
+)
 
 # Full evaluation
 print("\n4. Running full evaluation...")
@@ -66,7 +71,12 @@ print(f"   [OK] Robustness: {rob.shape}")
 print(f"   [OK] Integrated: {integrated.shape}")
 
 print("\n5. Integrated summary:")
-print("\n" + integrated[['model_name', 'MAE', 'mean_degradation', 'composite_score']].to_string(index=False))
+print(
+    "\n"
+    + integrated[
+        ["model_name", "MAE", "mean_degradation", "composite_score"]
+    ].to_string(index=False)
+)
 
 # Generate report
 print("\n6. Generating report...")

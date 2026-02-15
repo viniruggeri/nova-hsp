@@ -1,0 +1,20 @@
+# Metric: Lead Time to Basin Collapse
+# How far in advance does S_t < δ before actual bifurcation?
+
+metric: lead_time
+
+params:
+  # Detection thresholds to sweep
+  thresholds: [0.3, 0.4, 0.5, 0.6, 0.7]
+  persistence: 3             # K consecutive steps below δ
+
+  # Normalization
+  normalize: true            # LT_norm = (t_bif - t_alert) / (t_bif - t_start)
+
+# Expected ranges:
+#   Saddle-Node:  LT_norm > 0.15 at δ=0.5
+#   Ecosystem:    LT_norm > 0.20 at δ=0.5
+#   DW:           LT_norm ~ 0.0 (sudden, no early warning)
+expected:
+  min_lead_time_norm: 0.10
+  good_lead_time_norm: 0.20

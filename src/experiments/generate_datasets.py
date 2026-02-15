@@ -257,7 +257,9 @@ def generate_split(
     n_collapsed = df_summary["collapsed"].sum()
     collapse_rate = n_collapsed / len(df_summary)
 
-    logger.info(f"{split} split: {n_collapsed}/{len(df_summary)} collapsed ({collapse_rate:.1%})")
+    logger.info(
+        f"{split} split: {n_collapsed}/{len(df_summary)} collapsed ({collapse_rate:.1%})"
+    )
 
     if collapse_rate < 0.5:
         logger.warning(
@@ -627,9 +629,15 @@ def main():
     logger.info(f"Successfully generated: {success_count}/{len(worlds)} worlds")
     logger.info(f"\nData location: data/processed/{{world_name}}/")
     logger.info(f"\nTo use in baseline training:")
-    logger.info(f"  - Load obs: np.load('data/processed/{{world}}/{{split}}/run_{{seed}}/obs.npy')")
-    logger.info(f"  - Load events: json.load('data/processed/{{world}}/{{split}}/run_{{seed}}/events.json')")
-    logger.info(f"  - Load aggregated: pd.read_csv('data/processed/{{world}}/all_runs.csv')")
+    logger.info(
+        f"  - Load obs: np.load('data/processed/{{world}}/{{split}}/run_{{seed}}/obs.npy')"
+    )
+    logger.info(
+        f"  - Load events: json.load('data/processed/{{world}}/{{split}}/run_{{seed}}/events.json')"
+    )
+    logger.info(
+        f"  - Load aggregated: pd.read_csv('data/processed/{{world}}/all_runs.csv')"
+    )
 
     return success_count == len(worlds)
 

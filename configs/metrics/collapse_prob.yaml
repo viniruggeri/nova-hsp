@@ -1,0 +1,24 @@
+# Metric: Basin Contraction Correlation
+# ρ(S_t, W_t) — Spearman correlation between S_t and basin width
+# Primary validation metric for S_t as geometric estimator
+
+metric: basin_contraction_correlation
+
+params:
+  min_width: 0.05           # Exclude post-collapse region where W < min_width
+
+# Expected ranges (from NB 09-10):
+#   Saddle-Node:   ρ > 0.95
+#   Ecosystem:     ρ > 0.90
+#   Disease-Free:  ρ > 0.85 (threshold system, weaker coupling)
+expected:
+  pass_threshold: 0.80
+  strong_threshold: 0.90
+
+# Also report monotonicity fraction
+monotonicity:
+  enabled: true
+  # Expected (from NB 11):
+  #   SN: ~80% (N=300), improves with N
+  #   ECO: ~84%
+  #   DW: ~54% (A3 violated)
