@@ -41,3 +41,4 @@ class LSTMRUL(nn.Module):
     
     
 #teste amem jesus agr da certo 5.0
+#teste agora vai 100%
