@@ -8,7 +8,7 @@ scikit-learn>=1.4,<2.0
 torch>=2.2,<3.0
 
 # Optional: Neural ODE dynamics
-# torchdiffeq>=0.2.3
+torchdiffeq>=0.2.3
 
 # Optional: Graph extensions
 # torch-geometric>=2.5,<3.0
