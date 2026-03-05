@@ -1,0 +1,37 @@
+# HSP Learned Pipeline — Dakos 2008 paleoclimate config
+# Smaller model + more epochs for short real-world series (~100-500 points)
+
+encoder:
+  type: lstm
+  input_dim: 1
+  latent_dim: 4
+  lstm_hidden: 16
+  lstm_layers: 2
+  dropout: 0.0
+
+dynamics:
+  type: residual
+  hidden_dim: 16
+  num_layers: 2
+
+training:
+  epochs: 500
+  lr: 5.0e-4
+  weight_decay: 1.0e-4
+  batch_size: 16
+  patience: 50
+  grad_clip: 1.0
+  window_size: 15
+  prediction_horizon: 8
+  decay_factor: 0.9
+  recon_weight: 0.1
+
+basin_access:
+  n_rollouts: 300
+  horizon: 40       # Shorter horizon for real data (less data)
+  perturb_std: 0.05
+  step: 3
+
+survival:
+  type: latent_distance
+  n_sigma: 3.0

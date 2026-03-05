@@ -1,0 +1,33 @@
+# HSP Learned Pipeline — Semi-synthetic validation config
+# For encoder+dynamics training on synthetic ODE trajectories
+
+encoder:
+  type: lstm
+  input_dim: 1           # Overridden per system (obs_dim)
+  latent_dim: 8
+  lstm_hidden: 32
+  lstm_layers: 2
+  dropout: 0.0
+
+dynamics:
+  type: residual
+  hidden_dim: 32
+  num_layers: 2
+
+training:
+  epochs: 300
+  lr: 5.0e-4
+  weight_decay: 1.0e-4
+  batch_size: 64
+  patience: 30
+  grad_clip: 1.0
+  window_size: 25
+  prediction_horizon: 10
+  decay_factor: 0.9
+  recon_weight: 0.1
+
+basin_access:
+  n_rollouts: 300
+  horizon: 80
+  perturb_std: 0.05
+  step: 5
