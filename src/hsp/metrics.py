@@ -20,6 +20,8 @@ from __future__ import annotations
 
 import numpy as np
 from scipy.stats import spearmanr
+import warnings
+from scipy.stats import ConstantInputWarning
 
 
 def basin_contraction_correlation(
@@ -44,7 +46,14 @@ def basin_contraction_correlation(
     if valid.sum() < 5:
         return float("nan")
 
-    rho, _ = spearmanr(survival[valid], basin_width[valid])
+    s_valid = survival[valid]
+    w_valid = basin_width[valid]
+    if np.std(s_valid) < 1e-12 or np.std(w_valid) < 1e-12:
+        return float("nan")
+
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", category=ConstantInputWarning)
+        rho, _ = spearmanr(s_valid, w_valid)
     return float(rho)
 
 

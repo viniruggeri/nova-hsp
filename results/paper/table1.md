@@ -1,0 +1,5 @@
+| System | rho(S,W) mean+/-std | Monotonicity mean+/-std | Lead time mean+/-std | Alert rate |
+| --- | --- | --- | --- | --- |
+| Double-Well | 0.636 +/- 0.259 | 0.540 +/- 0.042 | 0.450 +/- 0.138 | 1.000 |
+| Ecosystem | 0.882 +/- 0.013 | 0.859 +/- 0.036 | 0.377 +/- 0.028 | 1.000 |
+| Saddle-Node | 0.916 +/- 0.005 | 0.794 +/- 0.027 | 0.330 +/- 0.000 | 1.000 |

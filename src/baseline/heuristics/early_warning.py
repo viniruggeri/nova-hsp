@@ -10,9 +10,11 @@ Detects critical slowing down (CSD) through:
 import numpy as np
 import pandas as pd
 from sklearn.base import BaseEstimator
-from scipy.signal import correlate
 from scipy.stats import linregress
 import logging
+from typing import Any, Dict
+
+from src.baseline.types import BaselineResult
 
 logger = logging.getLogger(__name__)
 
@@ -60,7 +62,7 @@ class EarlyWarningSignals(BaseEstimator):
         variances = pd.Series(series).rolling(self.window).var().values
         return variances[self.window - 1 :]  # Drop NaN
 
-    def autocorrelation(self, series: np.ndarray, lag: int = None) -> np.ndarray:
+    def autocorrelation(self, series: np.ndarray, lag: int | None = None) -> np.ndarray:
         """
         Rolling autocorrelation at given lag.
 
@@ -84,6 +86,27 @@ class EarlyWarningSignals(BaseEstimator):
             autocorrs.append(acf)
 
         return np.array(autocorrs)
+
+    def skewness(self, series: np.ndarray) -> np.ndarray:
+        """
+        Rolling skewness.
+
+        Args:
+            series: Time series (T,)
+
+        Returns:
+            skew values aligned with rolling windows.
+        """
+        if len(series) < self.window:
+            std = np.std(series)
+            if std < 1e-12:
+                return np.array([0.0])
+            z = (series - np.mean(series)) / std
+            return np.array([float(np.mean(z**3))])
+
+        values = pd.Series(series).rolling(self.window).skew().values
+        values = values[self.window - 1 :]
+        return np.nan_to_num(values, nan=0.0)
 
     def _compute_acf(self, series: np.ndarray, lag: int) -> float:
         """Compute autocorrelation at given lag."""
@@ -137,10 +160,10 @@ class EarlyWarningSignals(BaseEstimator):
         try:
             slope, _, _, _, _ = linregress(x, series)
             return float(slope)
-        except:
+        except Exception:
             return 0.0
 
-    def fit(self, X: np.ndarray, T: np.ndarray = None):
+    def fit(self, X: np.ndarray, T: np.ndarray | None = None):
         """
         Fit EWS (calibrate threshold if needed).
 
@@ -219,3 +242,109 @@ class EarlyWarningSignals(BaseEstimator):
             t_alert = self.predict_alert_time(X[i])
             alert_times.append(t_alert)
         return np.array(alert_times)
+
+    def compute_indicator(
+        self,
+        trajectory: np.ndarray,
+        indicator: str = "variance",
+        step: int = 1,
+    ) -> tuple[np.ndarray, np.ndarray]:
+        """
+        Return a full indicator time series for geometric benchmarking.
+
+        Args:
+            trajectory: Series (T,) or multivariate trajectory (T, d).
+            indicator: One of {'variance', 'ac1', 'skewness'}.
+            step: Optional downsampling step.
+
+        Returns:
+            (times, values) aligned arrays.
+        """
+        if trajectory.ndim == 2:
+            series = trajectory.mean(axis=1)
+        else:
+            series = trajectory
+
+        if indicator == "variance":
+            values = self.variance(series)
+            higher_means_risk = True
+        elif indicator == "ac1":
+            values = self.autocorrelation(series)
+            higher_means_risk = True
+        elif indicator == "skewness":
+            values = self.skewness(series)
+            higher_means_risk = False
+        else:
+            raise ValueError(
+                f"Unknown indicator '{indicator}'. Use variance, ac1, or skewness."
+            )
+
+        start = self.window - 1 if len(series) >= self.window else 0
+        times = np.arange(start, start + len(values), dtype=float)
+
+        if step > 1:
+            idx = np.arange(0, len(values), step)
+            times = times[idx]
+            values = values[idx]
+
+        # keep variable to document risk orientation for caller behavior
+        _ = higher_means_risk
+        return times, values
+
+    @staticmethod
+    def _first_persistent_crossing(mask: np.ndarray, persistence: int) -> int | None:
+        """Return first index with `persistence` consecutive True values."""
+        if persistence <= 1:
+            idx = np.where(mask)[0]
+            return int(idx[0]) if len(idx) > 0 else None
+
+        count = 0
+        for i, flag in enumerate(mask):
+            if flag:
+                count += 1
+                if count >= persistence:
+                    return i - persistence + 1
+            else:
+                count = 0
+        return None
+
+    def compute_baseline_result(
+        self,
+        trajectory: np.ndarray,
+        indicator: str = "variance",
+        step: int = 1,
+        persistence: int = 3,
+        baseline_frac: float = 0.2,
+        zscore_k: float = 2.0,
+    ) -> BaselineResult:
+        """
+        Compute standardized BaselineResult from an EWS indicator.
+
+        Alert uses a fixed z-score rule on the baseline segment to avoid
+        opportunistic threshold tuning.
+        """
+        times, values = self.compute_indicator(trajectory, indicator=indicator, step=step)
+
+        higher_means_risk = indicator in {"variance", "ac1"}
+        baseline_n = max(3, int(len(values) * baseline_frac))
+        base = values[:baseline_n]
+        mu = float(np.mean(base))
+        sigma = float(np.std(base))
+
+        if higher_means_risk:
+            threshold = mu + zscore_k * sigma
+            mask = values > threshold
+        else:
+            threshold = mu - zscore_k * sigma
+            mask = values < threshold
+
+        alert_idx = self._first_persistent_crossing(mask, persistence=persistence)
+        alert_time = float(times[alert_idx]) if alert_idx is not None else None
+
+        return BaselineResult(
+            name=f"Rolling {indicator}",
+            times=times,
+            values=values,
+            alert_time=alert_time,
+            higher_means_risk=higher_means_risk,
+        )
