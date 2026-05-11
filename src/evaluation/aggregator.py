@@ -7,7 +7,7 @@ Provides statistical comparison and LaTeX export for paper-ready tables.
 
 import numpy as np
 import pandas as pd
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Dict, List, Optional
 from pathlib import Path
 from scipy import stats
 import logging
@@ -30,6 +30,42 @@ class ResultsAggregator:
     def __init__(self):
         self.results: Dict[str, pd.DataFrame] = {}
         self.metadata: Dict[str, Dict] = {}
+
+    @staticmethod
+    def cliffs_delta(values1: np.ndarray, values2: np.ndarray) -> float:
+        """Compute Cliff's delta effect size.
+
+        Delta is in [-1, 1]. Absolute interpretation:
+        - < 0.147: negligible
+        - < 0.33: small
+        - < 0.474: medium
+        - >= 0.474: large
+        """
+        x = np.asarray(values1)
+        y = np.asarray(values2)
+        if len(x) == 0 or len(y) == 0:
+            return 0.0
+
+        gt = 0
+        lt = 0
+        for xi in x:
+            gt += np.sum(xi > y)
+            lt += np.sum(xi < y)
+
+        n_pairs = len(x) * len(y)
+        return float((gt - lt) / n_pairs)
+
+    @staticmethod
+    def cliffs_delta_magnitude(delta: float) -> str:
+        """Magnitude bucket for Cliff's delta."""
+        ad = abs(delta)
+        if ad < 0.147:
+            return "negligible"
+        if ad < 0.33:
+            return "small"
+        if ad < 0.474:
+            return "medium"
+        return "large"
 
     def add_results(
         self, name: str, results: pd.DataFrame, metadata: Optional[Dict] = None
@@ -260,6 +296,8 @@ class ResultsAggregator:
                 mean_diff = np.mean(values1) - np.mean(values2)
                 pooled_std = np.sqrt((np.std(values1) ** 2 + np.std(values2) ** 2) / 2)
                 cohens_d = mean_diff / pooled_std if pooled_std > 0 else 0
+                cliffs_delta = self.cliffs_delta(values1, values2)
+                cliffs_magnitude = self.cliffs_delta_magnitude(cliffs_delta)
 
                 comparison_results.append(
                     {
@@ -271,6 +309,8 @@ class ResultsAggregator:
                         "statistic": statistic,
                         "p_value": p_value,
                         "cohens_d": cohens_d,
+                        "cliffs_delta": cliffs_delta,
+                        "cliffs_magnitude": cliffs_magnitude,
                         "significant_005": p_value < 0.05,
                         "significant_001": p_value < 0.01,
                     }
@@ -490,7 +530,7 @@ class ResultsAggregator:
             # Aggregated results
             aggregated = self.aggregate_by_model()
             if not aggregated.empty:
-                f.write(aggregated.to_markdown(index=False))
+                f.write(self._safe_to_markdown(aggregated))
 
             f.write("\n\n## Cross-World Comparison\n\n")
 
@@ -498,6 +538,21 @@ class ResultsAggregator:
             if len(self.results) >= 2:
                 comparison = self.compare_across_worlds()
                 if not comparison.empty:
-                    f.write(comparison.to_markdown(index=False))
+                    f.write(self._safe_to_markdown(comparison))
 
         logger.info(f"Exported summary to {output_file}")
+
+    @staticmethod
+    def _safe_to_markdown(df: pd.DataFrame) -> str:
+        """Render markdown table with graceful fallback when tabulate is missing."""
+        try:
+            return df.to_markdown(index=False)
+        except ImportError:
+            cols = list(df.columns)
+            header = "| " + " | ".join(cols) + " |"
+            sep = "| " + " | ".join(["---"] * len(cols)) + " |"
+            rows = [header, sep]
+            for _, row in df.iterrows():
+                vals = [str(row[c]) if pd.notna(row[c]) else "" for c in cols]
+                rows.append("| " + " | ".join(vals) + " |")
+            return "\n".join(rows)

@@ -1,0 +1,631 @@
+run_id,system,seed,sigma,model,rho_tau,lead_time_norm,separability,alert_time,bif_time,n_points
+Saddle-Node|seed=0|sigma=0.030,Saddle-Node,0,0.03,S_t,0.906903607813285,0.33,0.9991319444444444,140.0,239.0,60
+Saddle-Node|seed=0|sigma=0.030,Saddle-Node,0,0.03,B1 Rolling Variance,-0.03128964059196617,0.0,0.4597902097902098,,239.0,57
+Saddle-Node|seed=0|sigma=0.030,Saddle-Node,0,0.03,B2 Rolling AC1,0.043410852713178294,0.0,0.4300699300699301,,239.0,57
+Saddle-Node|seed=0|sigma=0.030,Saddle-Node,0,0.03,B3 Rolling Skewness,-0.09062720225510923,0.0,0.486013986013986,,239.0,57
+Saddle-Node|seed=0|sigma=0.030,Saddle-Node,0,0.03,B4 DFA,0.09017595307917887,0.0,0.5168269230769231,,239.0,45
+Saddle-Node|seed=0|sigma=0.030,Saddle-Node,0,0.03,B5 Basin Stability,0.7427693380822313,0.18,0.9965277777777778,185.0,239.0,60
+Saddle-Node|seed=1|sigma=0.030,Saddle-Node,1,0.03,S_t,0.91196540696714,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=1|sigma=0.030,Saddle-Node,1,0.03,B1 Rolling Variance,0.2693446088794926,0.1,0.5052447552447552,209.0,239.0,57
+Saddle-Node|seed=1|sigma=0.030,Saddle-Node,1,0.03,B2 Rolling AC1,0.05454545454545454,0.0,0.4230769230769231,,239.0,57
+Saddle-Node|seed=1|sigma=0.030,Saddle-Node,1,0.03,B3 Rolling Skewness,0.18872445384073291,0.016666666666666666,0.5506993006993007,234.0,239.0,57
+Saddle-Node|seed=1|sigma=0.030,Saddle-Node,1,0.03,B4 DFA,0.14552785923753664,0.0,0.8317307692307692,,239.0,45
+Saddle-Node|seed=1|sigma=0.030,Saddle-Node,1,0.03,B5 Basin Stability,0.732858230970525,0.13,0.998263888888889,200.0,239.0,60
+Saddle-Node|seed=2|sigma=0.030,Saddle-Node,2,0.03,S_t,0.9194910093261146,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=2|sigma=0.030,Saddle-Node,2,0.03,B1 Rolling Variance,0.06427061310782241,0.0,0.8111888111888111,244.0,239.0,57
+Saddle-Node|seed=2|sigma=0.030,Saddle-Node,2,0.03,B2 Rolling AC1,0.06257928118393234,0.0,0.7377622377622378,,239.0,57
+Saddle-Node|seed=2|sigma=0.030,Saddle-Node,2,0.03,B3 Rolling Skewness,-0.3090909090909091,0.0,0.4580419580419581,,239.0,57
+Saddle-Node|seed=2|sigma=0.030,Saddle-Node,2,0.03,B4 DFA,-0.3581378299120234,0.0,0.9182692307692307,,239.0,45
+Saddle-Node|seed=2|sigma=0.030,Saddle-Node,2,0.03,B5 Basin Stability,0.7048006256746604,0.11333333333333333,1.0,205.0,239.0,60
+Saddle-Node|seed=3|sigma=0.030,Saddle-Node,3,0.03,S_t,0.9190641837071537,0.33,0.9809027777777778,140.0,239.0,60
+Saddle-Node|seed=3|sigma=0.030,Saddle-Node,3,0.03,B1 Rolling Variance,-0.25496828752642703,0.0,0.6223776223776224,,239.0,57
+Saddle-Node|seed=3|sigma=0.030,Saddle-Node,3,0.03,B2 Rolling AC1,-0.0897815362931642,0.0,0.5157342657342657,,239.0,57
+Saddle-Node|seed=3|sigma=0.030,Saddle-Node,3,0.03,B3 Rolling Skewness,0.1558844256518675,0.0,0.3531468531468531,,239.0,57
+Saddle-Node|seed=3|sigma=0.030,Saddle-Node,3,0.03,B4 DFA,-0.2925219941348973,0.0,0.4783653846153846,,239.0,45
+Saddle-Node|seed=3|sigma=0.030,Saddle-Node,3,0.03,B5 Basin Stability,0.7380920781439224,0.18,0.9861111111111112,185.0,239.0,60
+Saddle-Node|seed=4|sigma=0.030,Saddle-Node,4,0.03,S_t,0.9211112751117433,0.33,0.9913194444444444,140.0,239.0,60
+Saddle-Node|seed=4|sigma=0.030,Saddle-Node,4,0.03,B1 Rolling Variance,0.20577871740662437,0.5166666666666667,0.4143356643356643,84.0,239.0,57
+Saddle-Node|seed=4|sigma=0.030,Saddle-Node,4,0.03,B2 Rolling AC1,0.15602536997885835,0.5166666666666667,0.40034965034965037,84.0,239.0,57
+Saddle-Node|seed=4|sigma=0.030,Saddle-Node,4,0.03,B3 Rolling Skewness,0.04284707540521494,0.0,0.3548951048951049,,239.0,57
+Saddle-Node|seed=4|sigma=0.030,Saddle-Node,4,0.03,B4 DFA,0.5557184750733136,0.0,0.15384615384615385,,239.0,45
+Saddle-Node|seed=4|sigma=0.030,Saddle-Node,4,0.03,B5 Basin Stability,0.7900857453094927,0.19666666666666666,0.9965277777777778,180.0,239.0,60
+Saddle-Node|seed=5|sigma=0.030,Saddle-Node,5,0.03,S_t,0.9117047206669535,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=5|sigma=0.030,Saddle-Node,5,0.03,B1 Rolling Variance,0.009725158562367865,0.36666666666666664,0.6573426573426573,129.0,239.0,57
+Saddle-Node|seed=5|sigma=0.030,Saddle-Node,5,0.03,B2 Rolling AC1,0.04792107117688513,0.0,0.6433566433566433,,239.0,57
+Saddle-Node|seed=5|sigma=0.030,Saddle-Node,5,0.03,B3 Rolling Skewness,-0.0536997885835095,0.0,0.7307692307692307,,239.0,57
+Saddle-Node|seed=5|sigma=0.030,Saddle-Node,5,0.03,B4 DFA,0.41129032258064513,0.35,0.6562500000000001,134.0,239.0,45
+Saddle-Node|seed=5|sigma=0.030,Saddle-Node,5,0.03,B5 Basin Stability,0.8249806303212132,0.21333333333333335,1.0,175.0,239.0,60
+Saddle-Node|seed=6|sigma=0.030,Saddle-Node,6,0.03,S_t,0.9217202310336694,0.33,0.9930555555555556,140.0,239.0,60
+Saddle-Node|seed=6|sigma=0.030,Saddle-Node,6,0.03,B1 Rolling Variance,-0.17533474277660324,0.26666666666666666,0.38286713286713286,159.0,239.0,57
+Saddle-Node|seed=6|sigma=0.030,Saddle-Node,6,0.03,B2 Rolling AC1,-0.13121916842847076,0.0,0.40384615384615374,,239.0,57
+Saddle-Node|seed=6|sigma=0.030,Saddle-Node,6,0.03,B3 Rolling Skewness,-0.07357293868921776,0.0,0.47027972027972026,,239.0,57
+Saddle-Node|seed=6|sigma=0.030,Saddle-Node,6,0.03,B4 DFA,0.006231671554252198,0.0,0.06490384615384615,,239.0,45
+Saddle-Node|seed=6|sigma=0.030,Saddle-Node,6,0.03,B5 Basin Stability,0.8223955667938654,0.23,1.0,170.0,239.0,60
+Saddle-Node|seed=7|sigma=0.030,Saddle-Node,7,0.03,S_t,0.9128130699986516,0.33,0.9947916666666666,140.0,239.0,60
+Saddle-Node|seed=7|sigma=0.030,Saddle-Node,7,0.03,B1 Rolling Variance,-0.29034531360112753,0.3333333333333333,0.506993006993007,139.0,239.0,57
+Saddle-Node|seed=7|sigma=0.030,Saddle-Node,7,0.03,B2 Rolling AC1,-0.19393939393939394,0.0,0.5297202797202798,,239.0,57
+Saddle-Node|seed=7|sigma=0.030,Saddle-Node,7,0.03,B3 Rolling Skewness,-0.5291050035236081,0.0,0.3566433566433566,,239.0,57
+Saddle-Node|seed=7|sigma=0.030,Saddle-Node,7,0.03,B4 DFA,0.5087976539589443,0.31666666666666665,0.18509615384615383,144.0,239.0,45
+Saddle-Node|seed=7|sigma=0.030,Saddle-Node,7,0.03,B5 Basin Stability,0.8468436378772407,0.2966666666666667,1.0,150.0,239.0,60
+Saddle-Node|seed=8|sigma=0.030,Saddle-Node,8,0.03,S_t,0.9131557404031818,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=8|sigma=0.030,Saddle-Node,8,0.03,B1 Rolling Variance,0.17237491190979562,0.36666666666666664,0.28146853146853146,129.0,239.0,57
+Saddle-Node|seed=8|sigma=0.030,Saddle-Node,8,0.03,B2 Rolling AC1,0.231430584918957,0.0,0.35139860139860135,,239.0,57
+Saddle-Node|seed=8|sigma=0.030,Saddle-Node,8,0.03,B3 Rolling Skewness,-0.308245243128964,0.0,0.270979020979021,,239.0,57
+Saddle-Node|seed=8|sigma=0.030,Saddle-Node,8,0.03,B4 DFA,0.8178152492668621,0.15,0.4254807692307693,194.0,239.0,45
+Saddle-Node|seed=8|sigma=0.030,Saddle-Node,8,0.03,B5 Basin Stability,0.8466194214463142,0.2966666666666667,1.0,150.0,239.0,60
+Saddle-Node|seed=9|sigma=0.030,Saddle-Node,9,0.03,S_t,0.9117003696360956,0.33,0.9930555555555555,140.0,239.0,60
+Saddle-Node|seed=9|sigma=0.030,Saddle-Node,9,0.03,B1 Rolling Variance,-0.12755461592670894,0.0,0.4143356643356643,,239.0,57
+Saddle-Node|seed=9|sigma=0.030,Saddle-Node,9,0.03,B2 Rolling AC1,-0.04862579281183932,0.0,0.534965034965035,,239.0,57
+Saddle-Node|seed=9|sigma=0.030,Saddle-Node,9,0.03,B3 Rolling Skewness,-0.017758985200845664,0.0,0.596153846153846,,239.0,57
+Saddle-Node|seed=9|sigma=0.030,Saddle-Node,9,0.03,B4 DFA,-0.23020527859237536,0.0,0.3317307692307692,,239.0,45
+Saddle-Node|seed=9|sigma=0.030,Saddle-Node,9,0.03,B5 Basin Stability,0.8194797846753378,0.2633333333333333,1.0,160.0,239.0,60
+Double-Well|seed=0|sigma=0.030,Double-Well,0,0.03,S_t,0.35968160393540866,0.4475,0.23209663503019845,125.0,304.0,80
+Double-Well|seed=0|sigma=0.030,Double-Well,0,0.03,B1 Rolling Variance,-0.2717785843920145,0.0,0.37368421052631573,,304.0,77
+Double-Well|seed=0|sigma=0.030,Double-Well,0,0.03,B2 Rolling AC1,-0.17319159968887735,0.0,0.487719298245614,,304.0,77
+Double-Well|seed=0|sigma=0.030,Double-Well,0,0.03,B3 Rolling Skewness,-0.07920663728286233,0.0,0.5815789473684211,,304.0,77
+Double-Well|seed=0|sigma=0.030,Double-Well,0,0.03,B4 DFA,-0.39196310935441364,0.0,0.28777777777777774,,304.0,65
+Double-Well|seed=0|sigma=0.030,Double-Well,0,0.03,B5 Basin Stability,0.34615742886390466,0.4475,0.2377049180327869,125.0,304.0,80
+Double-Well|seed=1|sigma=0.030,Double-Well,1,0.03,S_t,0.9531919514923806,0.535,0.8050043140638482,90.0,304.0,80
+Double-Well|seed=1|sigma=0.030,Double-Well,1,0.03,B1 Rolling Variance,0.15964480165932074,0.0,0.48771929824561405,344.0,304.0,77
+Double-Well|seed=1|sigma=0.030,Double-Well,1,0.03,B2 Rolling AC1,-0.10526315789473686,0.0,0.4780701754385965,,304.0,77
+Double-Well|seed=1|sigma=0.030,Double-Well,1,0.03,B3 Rolling Skewness,0.14596836919885922,0.1125,0.4096491228070175,259.0,304.0,77
+Double-Well|seed=1|sigma=0.030,Double-Well,1,0.03,B4 DFA,0.3372859025032938,0.0,0.45222222222222225,,304.0,65
+Double-Well|seed=1|sigma=0.030,Double-Well,1,0.03,B5 Basin Stability,0.9303783475630654,0.535,0.8006902502157032,90.0,304.0,80
+Double-Well|seed=2|sigma=0.030,Double-Well,2,0.03,S_t,0.7803297879313291,0.3975,0.7640207075064711,145.0,304.0,80
+Double-Well|seed=2|sigma=0.030,Double-Well,2,0.03,B1 Rolling Variance,0.14272750842623802,0.325,0.6394736842105263,174.0,304.0,77
+Double-Well|seed=2|sigma=0.030,Double-Well,2,0.03,B2 Rolling AC1,0.16742286751361166,0.0,0.6166666666666667,,304.0,77
+Double-Well|seed=2|sigma=0.030,Double-Well,2,0.03,B3 Rolling Skewness,-0.27067669172932335,0.0,0.5114035087719299,,304.0,77
+Double-Well|seed=2|sigma=0.030,Double-Well,2,0.03,B4 DFA,0.3334650856389986,0.0,0.63,,304.0,65
+Double-Well|seed=2|sigma=0.030,Double-Well,2,0.03,B5 Basin Stability,0.7895565977510174,0.3725,0.7903364969801553,155.0,304.0,80
+Double-Well|seed=3|sigma=0.030,Double-Well,3,0.03,S_t,0.8551854478924095,0.5725,0.8088869715271785,75.0,304.0,80
+Double-Well|seed=3|sigma=0.030,Double-Well,3,0.03,B1 Rolling Variance,0.059242934923515685,0.1375,0.537719298245614,249.0,304.0,77
+Double-Well|seed=3|sigma=0.030,Double-Well,3,0.03,B2 Rolling AC1,-0.013935701322271196,0.0,0.4473684210526316,,304.0,77
+Double-Well|seed=3|sigma=0.030,Double-Well,3,0.03,B3 Rolling Skewness,0.00311122634171636,0.0,0.38421052631578945,,304.0,77
+Double-Well|seed=3|sigma=0.030,Double-Well,3,0.03,B4 DFA,0.20606060606060603,0.0,0.3555555555555555,,304.0,65
+Double-Well|seed=3|sigma=0.030,Double-Well,3,0.03,B5 Basin Stability,0.8005242313620324,0.235,0.8153580672993961,210.0,304.0,80
+Double-Well|seed=4|sigma=0.030,Double-Well,4,0.03,S_t,0.844854034766486,0.3725,0.9767040552200172,155.0,304.0,80
+Double-Well|seed=4|sigma=0.030,Double-Well,4,0.03,B1 Rolling Variance,-0.07006740990407054,0.0125,0.5578947368421052,299.0,304.0,77
+Double-Well|seed=4|sigma=0.030,Double-Well,4,0.03,B2 Rolling AC1,-0.07875291677469537,0.0,0.5657894736842105,,304.0,77
+Double-Well|seed=4|sigma=0.030,Double-Well,4,0.03,B3 Rolling Skewness,-0.10331864143116412,0.0,0.4728070175438596,,304.0,77
+Double-Well|seed=4|sigma=0.030,Double-Well,4,0.03,B4 DFA,-0.21581027667984187,0.0,0.7844444444444445,314.0,304.0,65
+Double-Well|seed=4|sigma=0.030,Double-Well,4,0.03,B5 Basin Stability,0.8545621006903822,0.1725,0.9836065573770492,235.0,304.0,80
+Double-Well|seed=5|sigma=0.030,Double-Well,5,0.03,S_t,0.4011477281153013,0.51,0.808455565142364,100.0,304.0,80
+Double-Well|seed=5|sigma=0.030,Double-Well,5,0.03,B1 Rolling Variance,0.023658283640134822,0.4375,0.6,129.0,304.0,77
+Double-Well|seed=5|sigma=0.030,Double-Well,5,0.03,B2 Rolling AC1,0.0705211304122375,0.0,0.5692982456140351,,304.0,77
+Double-Well|seed=5|sigma=0.030,Double-Well,5,0.03,B3 Rolling Skewness,0.2282214156079855,0.0,0.47631578947368425,,304.0,77
+Double-Well|seed=5|sigma=0.030,Double-Well,5,0.03,B4 DFA,0.26745718050065875,0.0,0.6244444444444444,,304.0,65
+Double-Well|seed=5|sigma=0.030,Double-Well,5,0.03,B5 Basin Stability,0.4116262579910564,0.51,0.8326143226919759,100.0,304.0,80
+Double-Well|seed=6|sigma=0.030,Double-Well,6,0.03,S_t,0.3975830358607192,0.11,0.9620362381363243,260.0,304.0,80
+Double-Well|seed=6|sigma=0.030,Double-Well,6,0.03,B1 Rolling Variance,0.07233601244490537,0.1,0.4070175438596491,264.0,304.0,77
+Double-Well|seed=6|sigma=0.030,Double-Well,6,0.03,B2 Rolling AC1,-0.008491055224267565,0.0,0.4526315789473684,,304.0,77
+Double-Well|seed=6|sigma=0.030,Double-Well,6,0.03,B3 Rolling Skewness,-0.13540316308011408,0.0,0.44999999999999996,,304.0,77
+Double-Well|seed=6|sigma=0.030,Double-Well,6,0.03,B4 DFA,-0.15928853754940708,0.0,0.5522222222222222,,304.0,65
+Double-Well|seed=6|sigma=0.030,Double-Well,6,0.03,B5 Basin Stability,0.37647655172715966,0.11,0.9801553062985333,260.0,304.0,80
+Double-Well|seed=7|sigma=0.030,Double-Well,7,0.03,S_t,0.5807964420970284,0.535,0.6971527178602244,90.0,304.0,80
+Double-Well|seed=7|sigma=0.030,Double-Well,7,0.03,B1 Rolling Variance,-0.16904329789992223,0.4,0.587719298245614,144.0,304.0,77
+Double-Well|seed=7|sigma=0.030,Double-Well,7,0.03,B2 Rolling AC1,-0.020417422867513614,0.0,0.5307017543859649,,304.0,77
+Double-Well|seed=7|sigma=0.030,Double-Well,7,0.03,B3 Rolling Skewness,-0.38546798029556656,0.0,0.5324561403508772,,304.0,77
+Double-Well|seed=7|sigma=0.030,Double-Well,7,0.03,B4 DFA,-0.14664031620553358,0.4,0.4388888888888889,144.0,304.0,65
+Double-Well|seed=7|sigma=0.030,Double-Well,7,0.03,B5 Basin Stability,0.5188503606986794,0.51,0.7338222605694564,100.0,304.0,80
+Double-Well|seed=8|sigma=0.030,Double-Well,8,0.03,S_t,0.2846901964997736,0.5725,0.8390854184641933,75.0,304.0,80
+Double-Well|seed=8|sigma=0.030,Double-Well,8,0.03,B1 Rolling Variance,-0.2743712730101115,0.0,0.462280701754386,,304.0,77
+Double-Well|seed=8|sigma=0.030,Double-Well,8,0.03,B2 Rolling AC1,-0.16833030852994557,0.0,0.46228070175438596,,304.0,77
+Double-Well|seed=8|sigma=0.030,Double-Well,8,0.03,B3 Rolling Skewness,-0.46078558465128344,0.0,0.4,,304.0,77
+Double-Well|seed=8|sigma=0.030,Double-Well,8,0.03,B4 DFA,-0.014229249011857705,0.275,0.4488888888888889,194.0,304.0,65
+Double-Well|seed=8|sigma=0.030,Double-Well,8,0.03,B5 Basin Stability,0.15023654461001532,0.51,0.8636755823986194,100.0,304.0,80
+Double-Well|seed=9|sigma=0.030,Double-Well,9,0.03,S_t,0.9041769787158805,0.4475,0.9206212251941328,125.0,304.0,80
+Double-Well|seed=9|sigma=0.030,Double-Well,9,0.03,B1 Rolling Variance,-0.05172413793103449,0.0,0.27280701754385966,,304.0,77
+Double-Well|seed=9|sigma=0.030,Double-Well,9,0.03,B2 Rolling AC1,0.07739175525019446,0.0,0.35964912280701755,,304.0,77
+Double-Well|seed=9|sigma=0.030,Double-Well,9,0.03,B3 Rolling Skewness,-0.054770547057298426,0.0,0.3640350877192982,,304.0,77
+Double-Well|seed=9|sigma=0.030,Double-Well,9,0.03,B4 DFA,-0.3733860342555994,0.0,0.5155555555555555,,304.0,65
+Double-Well|seed=9|sigma=0.030,Double-Well,9,0.03,B5 Basin Stability,0.8956096584066532,0.4475,0.9417601380500431,125.0,304.0,80
+Ecosystem|seed=0|sigma=0.030,Ecosystem,0,0.03,S_t,0.8772182124349565,0.36,,235.0,379.0,80
+Ecosystem|seed=0|sigma=0.030,Ecosystem,0,0.03,B1 Rolling Variance,-0.06785002250948616,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.030,Ecosystem,0,0.03,B2 Rolling AC1,0.05093575149527302,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.030,Ecosystem,0,0.03,B3 Rolling Skewness,0.034793234291594324,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.030,Ecosystem,0,0.03,B4 DFA,-0.17677132536815787,0.0,,,379.0,65
+Ecosystem|seed=0|sigma=0.030,Ecosystem,0,0.03,B5 Basin Stability,0.8629810268424792,0.3225,,250.0,379.0,80
+Ecosystem|seed=1|sigma=0.030,Ecosystem,1,0.03,S_t,0.8717576467655488,0.375,,250.0,400.0,80
+Ecosystem|seed=1|sigma=0.030,Ecosystem,1,0.03,B1 Rolling Variance,0.22803512277196486,0.4775,,209.0,400.0,77
+Ecosystem|seed=1|sigma=0.030,Ecosystem,1,0.03,B2 Rolling AC1,0.04966086545033913,0.0,,,400.0,77
+Ecosystem|seed=1|sigma=0.030,Ecosystem,1,0.03,B3 Rolling Skewness,0.033177348966822645,0.0,,,400.0,77
+Ecosystem|seed=1|sigma=0.030,Ecosystem,1,0.03,B4 DFA,0.35712412587412584,0.04,,384.0,400.0,65
+Ecosystem|seed=1|sigma=0.030,Ecosystem,1,0.03,B5 Basin Stability,0.8682551900234352,0.3625,,255.0,400.0,80
+Ecosystem|seed=2|sigma=0.030,Ecosystem,2,0.03,S_t,0.8570242036227793,0.4,,240.0,400.0,80
+Ecosystem|seed=2|sigma=0.030,Ecosystem,2,0.03,B1 Rolling Variance,0.10200325989799672,0.39,,244.0,400.0,77
+Ecosystem|seed=2|sigma=0.030,Ecosystem,2,0.03,B2 Rolling AC1,0.0873862979126137,0.0,,,400.0,77
+Ecosystem|seed=2|sigma=0.030,Ecosystem,2,0.03,B3 Rolling Skewness,-0.19985277880014723,0.0,,,400.0,77
+Ecosystem|seed=2|sigma=0.030,Ecosystem,2,0.03,B4 DFA,0.1888111888111888,0.0,,,400.0,65
+Ecosystem|seed=2|sigma=0.030,Ecosystem,2,0.03,B5 Basin Stability,0.8650369850699342,0.3875,,245.0,400.0,80
+Ecosystem|seed=3|sigma=0.030,Ecosystem,3,0.03,S_t,0.8520019768209403,0.3375,,255.0,390.0,80
+Ecosystem|seed=3|sigma=0.030,Ecosystem,3,0.03,B1 Rolling Variance,0.1663726884779516,0.0025,,389.0,390.0,77
+Ecosystem|seed=3|sigma=0.030,Ecosystem,3,0.03,B2 Rolling AC1,0.027368421052631577,0.0,,,390.0,77
+Ecosystem|seed=3|sigma=0.030,Ecosystem,3,0.03,B3 Rolling Skewness,-0.17951635846372688,0.0,,,390.0,77
+Ecosystem|seed=3|sigma=0.030,Ecosystem,3,0.03,B4 DFA,0.042194700460829494,0.0,,,390.0,65
+Ecosystem|seed=3|sigma=0.030,Ecosystem,3,0.03,B5 Basin Stability,0.8035004363004385,0.275,,280.0,390.0,80
+Ecosystem|seed=4|sigma=0.030,Ecosystem,4,0.03,S_t,0.8719707384207923,0.375,,250.0,400.0,80
+Ecosystem|seed=4|sigma=0.030,Ecosystem,4,0.03,B1 Rolling Variance,0.11533203638466795,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.030,Ecosystem,4,0.03,B2 Rolling AC1,0.03898732846101267,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.030,Ecosystem,4,0.03,B3 Rolling Skewness,-0.021846574478153424,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.030,Ecosystem,4,0.03,B4 DFA,0.1638986013986014,0.0,,,400.0,65
+Ecosystem|seed=4|sigma=0.030,Ecosystem,4,0.03,B5 Basin Stability,0.8617877263756555,0.3875,,245.0,400.0,80
+Ecosystem|seed=5|sigma=0.030,Ecosystem,5,0.03,S_t,0.9013800469125479,0.4125,,235.0,400.0,80
+Ecosystem|seed=5|sigma=0.030,Ecosystem,5,0.03,B1 Rolling Variance,0.07395236342604763,0.6775,,129.0,400.0,77
+Ecosystem|seed=5|sigma=0.030,Ecosystem,5,0.03,B2 Rolling AC1,0.059203953940796035,0.0,,,400.0,77
+Ecosystem|seed=5|sigma=0.030,Ecosystem,5,0.03,B3 Rolling Skewness,-0.008728113991271885,0.0,,,400.0,77
+Ecosystem|seed=5|sigma=0.030,Ecosystem,5,0.03,B4 DFA,0.23024475524475524,0.265,,294.0,400.0,65
+Ecosystem|seed=5|sigma=0.030,Ecosystem,5,0.03,B5 Basin Stability,0.8923594073393781,0.4125,,235.0,400.0,80
+Ecosystem|seed=6|sigma=0.030,Ecosystem,6,0.03,S_t,0.8784681565701091,0.375,,250.0,400.0,80
+Ecosystem|seed=6|sigma=0.030,Ecosystem,6,0.03,B1 Rolling Variance,-0.09974236290025763,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.030,Ecosystem,6,0.03,B2 Rolling AC1,-0.13163152636836845,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.030,Ecosystem,6,0.03,B3 Rolling Skewness,0.004758399495241599,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.030,Ecosystem,6,0.03,B4 DFA,-0.16656468531468532,0.0,,,400.0,65
+Ecosystem|seed=6|sigma=0.030,Ecosystem,6,0.03,B5 Basin Stability,0.8084419633516909,0.4375,,225.0,400.0,80
+Ecosystem|seed=7|sigma=0.030,Ecosystem,7,0.03,S_t,0.8802700174676572,0.3375,,250.0,385.0,80
+Ecosystem|seed=7|sigma=0.030,Ecosystem,7,0.03,B1 Rolling Variance,0.19683080340614587,0.615,,139.0,385.0,77
+Ecosystem|seed=7|sigma=0.030,Ecosystem,7,0.03,B2 Rolling AC1,0.20435394298407994,0.0,,,385.0,77
+Ecosystem|seed=7|sigma=0.030,Ecosystem,7,0.03,B3 Rolling Skewness,-0.213802295446131,0.0,,,385.0,77
+Ecosystem|seed=7|sigma=0.030,Ecosystem,7,0.03,B4 DFA,0.020271461307949937,0.6025,,144.0,385.0,65
+Ecosystem|seed=7|sigma=0.030,Ecosystem,7,0.03,B5 Basin Stability,0.8830455733516408,0.3625,,240.0,385.0,80
+Ecosystem|seed=8|sigma=0.030,Ecosystem,8,0.03,S_t,0.891910554584875,0.4125,,235.0,400.0,80
+Ecosystem|seed=8|sigma=0.030,Ecosystem,8,0.03,B1 Rolling Variance,-0.19801251380198748,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.030,Ecosystem,8,0.03,B2 Rolling AC1,-0.19141384930858613,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.030,Ecosystem,8,0.03,B3 Rolling Skewness,-0.32109995267889996,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.030,Ecosystem,8,0.03,B4 DFA,-0.09178321678321678,0.465,,214.0,400.0,65
+Ecosystem|seed=8|sigma=0.030,Ecosystem,8,0.03,B5 Basin Stability,0.8870062182141447,0.4125,,235.0,400.0,80
+Ecosystem|seed=9|sigma=0.030,Ecosystem,9,0.03,S_t,0.8720245005673889,0.375,,250.0,400.0,80
+Ecosystem|seed=9|sigma=0.030,Ecosystem,9,0.03,B1 Rolling Variance,-0.20413796729586203,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.030,Ecosystem,9,0.03,B2 Rolling AC1,-0.05118565644881434,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.030,Ecosystem,9,0.03,B3 Rolling Skewness,-0.1316578158683422,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.030,Ecosystem,9,0.03,B4 DFA,0.07194055944055945,0.0,,,400.0,65
+Ecosystem|seed=9|sigma=0.030,Ecosystem,9,0.03,B5 Basin Stability,0.8383177231846637,0.35,,260.0,400.0,80
+Saddle-Node|seed=0|sigma=0.050,Saddle-Node,0,0.05,S_t,0.9068117874030013,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=0|sigma=0.050,Saddle-Node,0,0.05,B1 Rolling Variance,-0.03128964059196617,0.0,0.4597902097902098,,239.0,57
+Saddle-Node|seed=0|sigma=0.050,Saddle-Node,0,0.05,B2 Rolling AC1,0.043410852713178294,0.0,0.4300699300699301,,239.0,57
+Saddle-Node|seed=0|sigma=0.050,Saddle-Node,0,0.05,B3 Rolling Skewness,-0.09062720225510923,0.0,0.486013986013986,,239.0,57
+Saddle-Node|seed=0|sigma=0.050,Saddle-Node,0,0.05,B4 DFA,0.09017595307917887,0.0,0.5168269230769231,,239.0,45
+Saddle-Node|seed=0|sigma=0.050,Saddle-Node,0,0.05,B5 Basin Stability,0.7403804912532029,0.18,0.9965277777777778,185.0,239.0,60
+Saddle-Node|seed=1|sigma=0.050,Saddle-Node,1,0.05,S_t,0.9119356555275948,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=1|sigma=0.050,Saddle-Node,1,0.05,B1 Rolling Variance,0.2693446088794926,0.1,0.5052447552447552,209.0,239.0,57
+Saddle-Node|seed=1|sigma=0.050,Saddle-Node,1,0.05,B2 Rolling AC1,0.05454545454545454,0.0,0.4230769230769231,,239.0,57
+Saddle-Node|seed=1|sigma=0.050,Saddle-Node,1,0.05,B3 Rolling Skewness,0.18872445384073291,0.016666666666666666,0.5506993006993007,234.0,239.0,57
+Saddle-Node|seed=1|sigma=0.050,Saddle-Node,1,0.05,B4 DFA,0.14552785923753664,0.0,0.8317307692307692,,239.0,45
+Saddle-Node|seed=1|sigma=0.050,Saddle-Node,1,0.05,B5 Basin Stability,0.7325356486556741,0.13,0.998263888888889,200.0,239.0,60
+Saddle-Node|seed=2|sigma=0.050,Saddle-Node,2,0.05,S_t,0.9209064571899042,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=2|sigma=0.050,Saddle-Node,2,0.05,B1 Rolling Variance,0.06427061310782241,0.0,0.8111888111888111,244.0,239.0,57
+Saddle-Node|seed=2|sigma=0.050,Saddle-Node,2,0.05,B2 Rolling AC1,0.06257928118393234,0.0,0.7377622377622378,,239.0,57
+Saddle-Node|seed=2|sigma=0.050,Saddle-Node,2,0.05,B3 Rolling Skewness,-0.3090909090909091,0.0,0.4580419580419581,,239.0,57
+Saddle-Node|seed=2|sigma=0.050,Saddle-Node,2,0.05,B4 DFA,-0.3581378299120234,0.0,0.9182692307692307,,239.0,45
+Saddle-Node|seed=2|sigma=0.050,Saddle-Node,2,0.05,B5 Basin Stability,0.7214422869254766,0.11333333333333333,1.0,205.0,239.0,60
+Saddle-Node|seed=3|sigma=0.050,Saddle-Node,3,0.05,S_t,0.9188634158115311,0.33,0.9817708333333333,140.0,239.0,60
+Saddle-Node|seed=3|sigma=0.050,Saddle-Node,3,0.05,B1 Rolling Variance,-0.25496828752642703,0.0,0.6223776223776224,,239.0,57
+Saddle-Node|seed=3|sigma=0.050,Saddle-Node,3,0.05,B2 Rolling AC1,-0.0897815362931642,0.0,0.5157342657342657,,239.0,57
+Saddle-Node|seed=3|sigma=0.050,Saddle-Node,3,0.05,B3 Rolling Skewness,0.1558844256518675,0.0,0.3531468531468531,,239.0,57
+Saddle-Node|seed=3|sigma=0.050,Saddle-Node,3,0.05,B4 DFA,-0.2925219941348973,0.0,0.4783653846153846,,239.0,45
+Saddle-Node|seed=3|sigma=0.050,Saddle-Node,3,0.05,B5 Basin Stability,0.7374841449287652,0.18,0.9878472222222222,185.0,239.0,60
+Saddle-Node|seed=4|sigma=0.050,Saddle-Node,4,0.05,S_t,0.9207672560646648,0.33,0.9913194444444444,140.0,239.0,60
+Saddle-Node|seed=4|sigma=0.050,Saddle-Node,4,0.05,B1 Rolling Variance,0.20577871740662437,0.5166666666666667,0.4143356643356643,84.0,239.0,57
+Saddle-Node|seed=4|sigma=0.050,Saddle-Node,4,0.05,B2 Rolling AC1,0.15602536997885835,0.5166666666666667,0.40034965034965037,84.0,239.0,57
+Saddle-Node|seed=4|sigma=0.050,Saddle-Node,4,0.05,B3 Rolling Skewness,0.04284707540521494,0.0,0.3548951048951049,,239.0,57
+Saddle-Node|seed=4|sigma=0.050,Saddle-Node,4,0.05,B4 DFA,0.5557184750733136,0.0,0.15384615384615385,,239.0,45
+Saddle-Node|seed=4|sigma=0.050,Saddle-Node,4,0.05,B5 Basin Stability,0.8244043871732825,0.28,0.9930555555555556,155.0,239.0,60
+Saddle-Node|seed=5|sigma=0.050,Saddle-Node,5,0.05,S_t,0.9190375771011139,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=5|sigma=0.050,Saddle-Node,5,0.05,B1 Rolling Variance,0.009725158562367865,0.36666666666666664,0.6573426573426573,129.0,239.0,57
+Saddle-Node|seed=5|sigma=0.050,Saddle-Node,5,0.05,B2 Rolling AC1,0.04792107117688513,0.0,0.6433566433566433,,239.0,57
+Saddle-Node|seed=5|sigma=0.050,Saddle-Node,5,0.05,B3 Rolling Skewness,-0.0536997885835095,0.0,0.7307692307692307,,239.0,57
+Saddle-Node|seed=5|sigma=0.050,Saddle-Node,5,0.05,B4 DFA,0.41129032258064513,0.35,0.6562500000000001,134.0,239.0,45
+Saddle-Node|seed=5|sigma=0.050,Saddle-Node,5,0.05,B5 Basin Stability,0.8243012941066928,0.21333333333333335,1.0,175.0,239.0,60
+Saddle-Node|seed=6|sigma=0.050,Saddle-Node,6,0.05,S_t,0.9215181472425706,0.33,0.9921875,140.0,239.0,60
+Saddle-Node|seed=6|sigma=0.050,Saddle-Node,6,0.05,B1 Rolling Variance,-0.17533474277660324,0.26666666666666666,0.38286713286713286,159.0,239.0,57
+Saddle-Node|seed=6|sigma=0.050,Saddle-Node,6,0.05,B2 Rolling AC1,-0.13121916842847076,0.0,0.40384615384615374,,239.0,57
+Saddle-Node|seed=6|sigma=0.050,Saddle-Node,6,0.05,B3 Rolling Skewness,-0.07357293868921776,0.0,0.47027972027972026,,239.0,57
+Saddle-Node|seed=6|sigma=0.050,Saddle-Node,6,0.05,B4 DFA,0.006231671554252198,0.0,0.06490384615384615,,239.0,45
+Saddle-Node|seed=6|sigma=0.050,Saddle-Node,6,0.05,B5 Basin Stability,0.8222026381529318,0.23,1.0,170.0,239.0,60
+Saddle-Node|seed=7|sigma=0.050,Saddle-Node,7,0.05,S_t,0.9130154689326698,0.33,0.9947916666666666,140.0,239.0,60
+Saddle-Node|seed=7|sigma=0.050,Saddle-Node,7,0.05,B1 Rolling Variance,-0.29034531360112753,0.3333333333333333,0.506993006993007,139.0,239.0,57
+Saddle-Node|seed=7|sigma=0.050,Saddle-Node,7,0.05,B2 Rolling AC1,-0.19393939393939394,0.0,0.5297202797202798,,239.0,57
+Saddle-Node|seed=7|sigma=0.050,Saddle-Node,7,0.05,B3 Rolling Skewness,-0.5291050035236081,0.0,0.3566433566433566,,239.0,57
+Saddle-Node|seed=7|sigma=0.050,Saddle-Node,7,0.05,B4 DFA,0.5087976539589443,0.31666666666666665,0.18509615384615383,144.0,239.0,45
+Saddle-Node|seed=7|sigma=0.050,Saddle-Node,7,0.05,B5 Basin Stability,0.8460665286917965,0.2966666666666667,1.0,150.0,239.0,60
+Saddle-Node|seed=8|sigma=0.050,Saddle-Node,8,0.05,S_t,0.9131557404031818,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=8|sigma=0.050,Saddle-Node,8,0.05,B1 Rolling Variance,0.17237491190979562,0.36666666666666664,0.28146853146853146,129.0,239.0,57
+Saddle-Node|seed=8|sigma=0.050,Saddle-Node,8,0.05,B2 Rolling AC1,0.231430584918957,0.0,0.35139860139860135,,239.0,57
+Saddle-Node|seed=8|sigma=0.050,Saddle-Node,8,0.05,B3 Rolling Skewness,-0.308245243128964,0.0,0.270979020979021,,239.0,57
+Saddle-Node|seed=8|sigma=0.050,Saddle-Node,8,0.05,B4 DFA,0.8178152492668621,0.15,0.4254807692307693,194.0,239.0,45
+Saddle-Node|seed=8|sigma=0.050,Saddle-Node,8,0.05,B5 Basin Stability,0.850632931553072,0.2966666666666667,1.0,150.0,239.0,60
+Saddle-Node|seed=9|sigma=0.050,Saddle-Node,9,0.05,S_t,0.9093610214024761,0.33,0.9930555555555556,140.0,239.0,60
+Saddle-Node|seed=9|sigma=0.050,Saddle-Node,9,0.05,B1 Rolling Variance,-0.12755461592670894,0.0,0.4143356643356643,,239.0,57
+Saddle-Node|seed=9|sigma=0.050,Saddle-Node,9,0.05,B2 Rolling AC1,-0.04862579281183932,0.0,0.534965034965035,,239.0,57
+Saddle-Node|seed=9|sigma=0.050,Saddle-Node,9,0.05,B3 Rolling Skewness,-0.017758985200845664,0.0,0.596153846153846,,239.0,57
+Saddle-Node|seed=9|sigma=0.050,Saddle-Node,9,0.05,B4 DFA,-0.23020527859237536,0.0,0.3317307692307692,,239.0,45
+Saddle-Node|seed=9|sigma=0.050,Saddle-Node,9,0.05,B5 Basin Stability,0.8608393756976468,0.28,1.0,155.0,239.0,60
+Double-Well|seed=0|sigma=0.050,Double-Well,0,0.05,S_t,0.35642124991104734,0.4475,0.23037100949094047,125.0,304.0,80
+Double-Well|seed=0|sigma=0.050,Double-Well,0,0.05,B1 Rolling Variance,-0.2717785843920145,0.0,0.37368421052631573,,304.0,77
+Double-Well|seed=0|sigma=0.050,Double-Well,0,0.05,B2 Rolling AC1,-0.17319159968887735,0.0,0.487719298245614,,304.0,77
+Double-Well|seed=0|sigma=0.050,Double-Well,0,0.05,B3 Rolling Skewness,-0.07920663728286233,0.0,0.5815789473684211,,304.0,77
+Double-Well|seed=0|sigma=0.050,Double-Well,0,0.05,B4 DFA,-0.39196310935441364,0.0,0.28777777777777774,,304.0,65
+Double-Well|seed=0|sigma=0.050,Double-Well,0,0.05,B5 Basin Stability,0.34708099856289376,0.4475,0.24158757549611737,125.0,304.0,80
+Double-Well|seed=1|sigma=0.050,Double-Well,1,0.05,S_t,0.9528179900182338,0.535,0.8019844693701467,90.0,304.0,80
+Double-Well|seed=1|sigma=0.050,Double-Well,1,0.05,B1 Rolling Variance,0.15964480165932074,0.0,0.48771929824561405,344.0,304.0,77
+Double-Well|seed=1|sigma=0.050,Double-Well,1,0.05,B2 Rolling AC1,-0.10526315789473686,0.0,0.4780701754385965,,304.0,77
+Double-Well|seed=1|sigma=0.050,Double-Well,1,0.05,B3 Rolling Skewness,0.14596836919885922,0.1125,0.4096491228070175,259.0,304.0,77
+Double-Well|seed=1|sigma=0.050,Double-Well,1,0.05,B4 DFA,0.3372859025032938,0.0,0.45222222222222225,,304.0,65
+Double-Well|seed=1|sigma=0.050,Double-Well,1,0.05,B5 Basin Stability,0.9344141064033682,0.535,0.8015530629853322,90.0,304.0,80
+Double-Well|seed=2|sigma=0.050,Double-Well,2,0.05,S_t,0.7823856396357562,0.3975,0.7661777394305436,145.0,304.0,80
+Double-Well|seed=2|sigma=0.050,Double-Well,2,0.05,B1 Rolling Variance,0.14272750842623802,0.325,0.6394736842105263,174.0,304.0,77
+Double-Well|seed=2|sigma=0.050,Double-Well,2,0.05,B2 Rolling AC1,0.16742286751361166,0.0,0.6166666666666667,,304.0,77
+Double-Well|seed=2|sigma=0.050,Double-Well,2,0.05,B3 Rolling Skewness,-0.27067669172932335,0.0,0.5114035087719299,,304.0,77
+Double-Well|seed=2|sigma=0.050,Double-Well,2,0.05,B4 DFA,0.3334650856389986,0.0,0.63,,304.0,65
+Double-Well|seed=2|sigma=0.050,Double-Well,2,0.05,B5 Basin Stability,0.782244184520989,0.3725,0.7855910267471958,155.0,304.0,80
+Double-Well|seed=3|sigma=0.050,Double-Well,3,0.05,S_t,0.8565005619893067,0.5725,0.8097497842968076,75.0,304.0,80
+Double-Well|seed=3|sigma=0.050,Double-Well,3,0.05,B1 Rolling Variance,0.059242934923515685,0.1375,0.537719298245614,249.0,304.0,77
+Double-Well|seed=3|sigma=0.050,Double-Well,3,0.05,B2 Rolling AC1,-0.013935701322271196,0.0,0.4473684210526316,,304.0,77
+Double-Well|seed=3|sigma=0.050,Double-Well,3,0.05,B3 Rolling Skewness,0.00311122634171636,0.0,0.38421052631578945,,304.0,77
+Double-Well|seed=3|sigma=0.050,Double-Well,3,0.05,B4 DFA,0.20606060606060603,0.0,0.3555555555555555,,304.0,65
+Double-Well|seed=3|sigma=0.050,Double-Well,3,0.05,B5 Basin Stability,0.8010003482966073,0.235,0.816220880069025,210.0,304.0,80
+Double-Well|seed=4|sigma=0.050,Double-Well,4,0.05,S_t,0.8418352579207787,0.3725,0.9767040552200172,155.0,304.0,80
+Double-Well|seed=4|sigma=0.050,Double-Well,4,0.05,B1 Rolling Variance,-0.07006740990407054,0.0125,0.5578947368421052,299.0,304.0,77
+Double-Well|seed=4|sigma=0.050,Double-Well,4,0.05,B2 Rolling AC1,-0.07875291677469537,0.0,0.5657894736842105,,304.0,77
+Double-Well|seed=4|sigma=0.050,Double-Well,4,0.05,B3 Rolling Skewness,-0.10331864143116412,0.0,0.4728070175438596,,304.0,77
+Double-Well|seed=4|sigma=0.050,Double-Well,4,0.05,B4 DFA,-0.21581027667984187,0.0,0.7844444444444445,314.0,304.0,65
+Double-Well|seed=4|sigma=0.050,Double-Well,4,0.05,B5 Basin Stability,0.8556391790189561,0.1725,0.9853321829163071,235.0,304.0,80
+Double-Well|seed=5|sigma=0.050,Double-Well,5,0.05,S_t,0.4054368543941833,0.51,0.8067299396031061,100.0,304.0,80
+Double-Well|seed=5|sigma=0.050,Double-Well,5,0.05,B1 Rolling Variance,0.023658283640134822,0.4375,0.6,129.0,304.0,77
+Double-Well|seed=5|sigma=0.050,Double-Well,5,0.05,B2 Rolling AC1,0.0705211304122375,0.0,0.5692982456140351,,304.0,77
+Double-Well|seed=5|sigma=0.050,Double-Well,5,0.05,B3 Rolling Skewness,0.2282214156079855,0.0,0.47631578947368425,,304.0,77
+Double-Well|seed=5|sigma=0.050,Double-Well,5,0.05,B4 DFA,0.26745718050065875,0.0,0.6244444444444444,,304.0,65
+Double-Well|seed=5|sigma=0.050,Double-Well,5,0.05,B5 Basin Stability,0.4009310682174024,0.51,0.8352027610008629,100.0,304.0,80
+Double-Well|seed=6|sigma=0.050,Double-Well,6,0.05,S_t,0.4003173903565278,0.11,0.9633304572907679,260.0,304.0,80
+Double-Well|seed=6|sigma=0.050,Double-Well,6,0.05,B1 Rolling Variance,0.07233601244490537,0.1,0.4070175438596491,264.0,304.0,77
+Double-Well|seed=6|sigma=0.050,Double-Well,6,0.05,B2 Rolling AC1,-0.008491055224267565,0.0,0.4526315789473684,,304.0,77
+Double-Well|seed=6|sigma=0.050,Double-Well,6,0.05,B3 Rolling Skewness,-0.13540316308011408,0.0,0.44999999999999996,,304.0,77
+Double-Well|seed=6|sigma=0.050,Double-Well,6,0.05,B4 DFA,-0.15928853754940708,0.0,0.5522222222222222,,304.0,65
+Double-Well|seed=6|sigma=0.050,Double-Well,6,0.05,B5 Basin Stability,0.3688498901937202,0.11,0.9801553062985331,260.0,304.0,80
+Double-Well|seed=7|sigma=0.050,Double-Well,7,0.05,S_t,0.5778559867624746,0.535,0.6975841242450388,90.0,304.0,80
+Double-Well|seed=7|sigma=0.050,Double-Well,7,0.05,B1 Rolling Variance,-0.16904329789992223,0.4,0.587719298245614,144.0,304.0,77
+Double-Well|seed=7|sigma=0.050,Double-Well,7,0.05,B2 Rolling AC1,-0.020417422867513614,0.0,0.5307017543859649,,304.0,77
+Double-Well|seed=7|sigma=0.050,Double-Well,7,0.05,B3 Rolling Skewness,-0.38546798029556656,0.0,0.5324561403508772,,304.0,77
+Double-Well|seed=7|sigma=0.050,Double-Well,7,0.05,B4 DFA,-0.14664031620553358,0.4,0.4388888888888889,144.0,304.0,65
+Double-Well|seed=7|sigma=0.050,Double-Well,7,0.05,B5 Basin Stability,0.5135236514771797,0.51,0.7329594477998275,100.0,304.0,80
+Double-Well|seed=8|sigma=0.050,Double-Well,8,0.05,S_t,0.2798656554909637,0.5725,0.8399482312338222,75.0,304.0,80
+Double-Well|seed=8|sigma=0.050,Double-Well,8,0.05,B1 Rolling Variance,-0.2743712730101115,0.0,0.462280701754386,,304.0,77
+Double-Well|seed=8|sigma=0.050,Double-Well,8,0.05,B2 Rolling AC1,-0.16833030852994557,0.0,0.46228070175438596,,304.0,77
+Double-Well|seed=8|sigma=0.050,Double-Well,8,0.05,B3 Rolling Skewness,-0.46078558465128344,0.0,0.4,,304.0,77
+Double-Well|seed=8|sigma=0.050,Double-Well,8,0.05,B4 DFA,-0.014229249011857705,0.275,0.4488888888888889,194.0,304.0,65
+Double-Well|seed=8|sigma=0.050,Double-Well,8,0.05,B5 Basin Stability,0.15514280453738627,0.51,0.8610871440897325,100.0,304.0,80
+Double-Well|seed=9|sigma=0.050,Double-Well,9,0.05,S_t,0.9035303529992855,0.4475,0.9197584124245037,125.0,304.0,80
+Double-Well|seed=9|sigma=0.050,Double-Well,9,0.05,B1 Rolling Variance,-0.05172413793103449,0.0,0.27280701754385966,,304.0,77
+Double-Well|seed=9|sigma=0.050,Double-Well,9,0.05,B2 Rolling AC1,0.07739175525019446,0.0,0.35964912280701755,,304.0,77
+Double-Well|seed=9|sigma=0.050,Double-Well,9,0.05,B3 Rolling Skewness,-0.054770547057298426,0.0,0.3640350877192982,,304.0,77
+Double-Well|seed=9|sigma=0.050,Double-Well,9,0.05,B4 DFA,-0.3733860342555994,0.0,0.5155555555555555,,304.0,65
+Double-Well|seed=9|sigma=0.050,Double-Well,9,0.05,B5 Basin Stability,0.8967022077326863,0.4475,0.9396031061259706,125.0,304.0,80
+Ecosystem|seed=0|sigma=0.050,Ecosystem,0,0.05,S_t,0.8769082796660639,0.36,,235.0,379.0,80
+Ecosystem|seed=0|sigma=0.050,Ecosystem,0,0.05,B1 Rolling Variance,-0.06785002250948616,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.050,Ecosystem,0,0.05,B2 Rolling AC1,0.05093575149527302,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.050,Ecosystem,0,0.05,B3 Rolling Skewness,0.034793234291594324,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.050,Ecosystem,0,0.05,B4 DFA,-0.17677132536815787,0.0,,,379.0,65
+Ecosystem|seed=0|sigma=0.050,Ecosystem,0,0.05,B5 Basin Stability,0.875059360352182,0.3225,,250.0,379.0,80
+Ecosystem|seed=1|sigma=0.050,Ecosystem,1,0.05,S_t,0.8721516712663404,0.375,,250.0,400.0,80
+Ecosystem|seed=1|sigma=0.050,Ecosystem,1,0.05,B1 Rolling Variance,0.22803512277196486,0.4775,,209.0,400.0,77
+Ecosystem|seed=1|sigma=0.050,Ecosystem,1,0.05,B2 Rolling AC1,0.04966086545033913,0.0,,,400.0,77
+Ecosystem|seed=1|sigma=0.050,Ecosystem,1,0.05,B3 Rolling Skewness,0.033177348966822645,0.0,,,400.0,77
+Ecosystem|seed=1|sigma=0.050,Ecosystem,1,0.05,B4 DFA,0.35712412587412584,0.04,,384.0,400.0,65
+Ecosystem|seed=1|sigma=0.050,Ecosystem,1,0.05,B5 Basin Stability,0.9013467356783693,0.4125,,235.0,400.0,80
+Ecosystem|seed=2|sigma=0.050,Ecosystem,2,0.05,S_t,0.8644696937329087,0.4125,,235.0,400.0,80
+Ecosystem|seed=2|sigma=0.050,Ecosystem,2,0.05,B1 Rolling Variance,0.10200325989799672,0.39,,244.0,400.0,77
+Ecosystem|seed=2|sigma=0.050,Ecosystem,2,0.05,B2 Rolling AC1,0.0873862979126137,0.0,,,400.0,77
+Ecosystem|seed=2|sigma=0.050,Ecosystem,2,0.05,B3 Rolling Skewness,-0.19985277880014723,0.0,,,400.0,77
+Ecosystem|seed=2|sigma=0.050,Ecosystem,2,0.05,B4 DFA,0.1888111888111888,0.0,,,400.0,65
+Ecosystem|seed=2|sigma=0.050,Ecosystem,2,0.05,B5 Basin Stability,0.8855298448570008,0.4,,240.0,400.0,80
+Ecosystem|seed=3|sigma=0.050,Ecosystem,3,0.05,S_t,0.8521641672383791,0.3375,,255.0,390.0,80
+Ecosystem|seed=3|sigma=0.050,Ecosystem,3,0.05,B1 Rolling Variance,0.1663726884779516,0.0025,,389.0,390.0,77
+Ecosystem|seed=3|sigma=0.050,Ecosystem,3,0.05,B2 Rolling AC1,0.027368421052631577,0.0,,,390.0,77
+Ecosystem|seed=3|sigma=0.050,Ecosystem,3,0.05,B3 Rolling Skewness,-0.17951635846372688,0.0,,,390.0,77
+Ecosystem|seed=3|sigma=0.050,Ecosystem,3,0.05,B4 DFA,0.042194700460829494,0.0,,,390.0,65
+Ecosystem|seed=3|sigma=0.050,Ecosystem,3,0.05,B5 Basin Stability,0.8241478465604565,0.2875,,275.0,390.0,80
+Ecosystem|seed=4|sigma=0.050,Ecosystem,4,0.05,S_t,0.8776734684961728,0.375,,250.0,400.0,80
+Ecosystem|seed=4|sigma=0.050,Ecosystem,4,0.05,B1 Rolling Variance,0.11533203638466795,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.050,Ecosystem,4,0.05,B2 Rolling AC1,0.03898732846101267,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.050,Ecosystem,4,0.05,B3 Rolling Skewness,-0.021846574478153424,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.050,Ecosystem,4,0.05,B4 DFA,0.1638986013986014,0.0,,,400.0,65
+Ecosystem|seed=4|sigma=0.050,Ecosystem,4,0.05,B5 Basin Stability,0.8637495084306083,0.3875,,245.0,400.0,80
+Ecosystem|seed=5|sigma=0.050,Ecosystem,5,0.05,S_t,0.9009473091046311,0.4125,,235.0,400.0,80
+Ecosystem|seed=5|sigma=0.050,Ecosystem,5,0.05,B1 Rolling Variance,0.07395236342604763,0.6775,,129.0,400.0,77
+Ecosystem|seed=5|sigma=0.050,Ecosystem,5,0.05,B2 Rolling AC1,0.059203953940796035,0.0,,,400.0,77
+Ecosystem|seed=5|sigma=0.050,Ecosystem,5,0.05,B3 Rolling Skewness,-0.008728113991271885,0.0,,,400.0,77
+Ecosystem|seed=5|sigma=0.050,Ecosystem,5,0.05,B4 DFA,0.23024475524475524,0.265,,294.0,400.0,65
+Ecosystem|seed=5|sigma=0.050,Ecosystem,5,0.05,B5 Basin Stability,0.9040523080306943,0.425,,230.0,400.0,80
+Ecosystem|seed=6|sigma=0.050,Ecosystem,6,0.05,S_t,0.8785745747749303,0.375,,250.0,400.0,80
+Ecosystem|seed=6|sigma=0.050,Ecosystem,6,0.05,B1 Rolling Variance,-0.09974236290025763,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.050,Ecosystem,6,0.05,B2 Rolling AC1,-0.13163152636836845,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.050,Ecosystem,6,0.05,B3 Rolling Skewness,0.004758399495241599,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.050,Ecosystem,6,0.05,B4 DFA,-0.16656468531468532,0.0,,,400.0,65
+Ecosystem|seed=6|sigma=0.050,Ecosystem,6,0.05,B5 Basin Stability,0.8810896786330032,0.4375,,225.0,400.0,80
+Ecosystem|seed=7|sigma=0.050,Ecosystem,7,0.05,S_t,0.8708913852954457,0.3375,,250.0,385.0,80
+Ecosystem|seed=7|sigma=0.050,Ecosystem,7,0.05,B1 Rolling Variance,0.19683080340614587,0.615,,139.0,385.0,77
+Ecosystem|seed=7|sigma=0.050,Ecosystem,7,0.05,B2 Rolling AC1,0.20435394298407994,0.0,,,385.0,77
+Ecosystem|seed=7|sigma=0.050,Ecosystem,7,0.05,B3 Rolling Skewness,-0.213802295446131,0.0,,,385.0,77
+Ecosystem|seed=7|sigma=0.050,Ecosystem,7,0.05,B4 DFA,0.020271461307949937,0.6025,,144.0,385.0,65
+Ecosystem|seed=7|sigma=0.050,Ecosystem,7,0.05,B5 Basin Stability,0.8910029082116253,0.3625,,240.0,385.0,80
+Ecosystem|seed=8|sigma=0.050,Ecosystem,8,0.05,S_t,0.8984970166854785,0.4125,,235.0,400.0,80
+Ecosystem|seed=8|sigma=0.050,Ecosystem,8,0.05,B1 Rolling Variance,-0.19801251380198748,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.050,Ecosystem,8,0.05,B2 Rolling AC1,-0.19141384930858613,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.050,Ecosystem,8,0.05,B3 Rolling Skewness,-0.32109995267889996,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.050,Ecosystem,8,0.05,B4 DFA,-0.09178321678321678,0.465,,214.0,400.0,65
+Ecosystem|seed=8|sigma=0.050,Ecosystem,8,0.05,B5 Basin Stability,0.8913993324044872,0.4125,,235.0,400.0,80
+Ecosystem|seed=9|sigma=0.050,Ecosystem,9,0.05,S_t,0.879878407138157,0.375,,250.0,400.0,80
+Ecosystem|seed=9|sigma=0.050,Ecosystem,9,0.05,B1 Rolling Variance,-0.20413796729586203,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.050,Ecosystem,9,0.05,B2 Rolling AC1,-0.05118565644881434,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.050,Ecosystem,9,0.05,B3 Rolling Skewness,-0.1316578158683422,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.050,Ecosystem,9,0.05,B4 DFA,0.07194055944055945,0.0,,,400.0,65
+Ecosystem|seed=9|sigma=0.050,Ecosystem,9,0.05,B5 Basin Stability,0.8513164693429095,0.4,,240.0,400.0,80
+Saddle-Node|seed=0|sigma=0.100,Saddle-Node,0,0.1,S_t,0.9062933788349631,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=0|sigma=0.100,Saddle-Node,0,0.1,B1 Rolling Variance,-0.03128964059196617,0.0,0.4597902097902098,,239.0,57
+Saddle-Node|seed=0|sigma=0.100,Saddle-Node,0,0.1,B2 Rolling AC1,0.043410852713178294,0.0,0.4300699300699301,,239.0,57
+Saddle-Node|seed=0|sigma=0.100,Saddle-Node,0,0.1,B3 Rolling Skewness,-0.09062720225510923,0.0,0.486013986013986,,239.0,57
+Saddle-Node|seed=0|sigma=0.100,Saddle-Node,0,0.1,B4 DFA,0.09017595307917887,0.0,0.5168269230769231,,239.0,45
+Saddle-Node|seed=0|sigma=0.100,Saddle-Node,0,0.1,B5 Basin Stability,0.7972821331302311,0.2633333333333333,0.9965277777777778,160.0,239.0,60
+Saddle-Node|seed=1|sigma=0.100,Saddle-Node,1,0.1,S_t,0.9181757422751233,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=1|sigma=0.100,Saddle-Node,1,0.1,B1 Rolling Variance,0.2693446088794926,0.1,0.5052447552447552,209.0,239.0,57
+Saddle-Node|seed=1|sigma=0.100,Saddle-Node,1,0.1,B2 Rolling AC1,0.05454545454545454,0.0,0.4230769230769231,,239.0,57
+Saddle-Node|seed=1|sigma=0.100,Saddle-Node,1,0.1,B3 Rolling Skewness,0.18872445384073291,0.016666666666666666,0.5506993006993007,234.0,239.0,57
+Saddle-Node|seed=1|sigma=0.100,Saddle-Node,1,0.1,B4 DFA,0.14552785923753664,0.0,0.8317307692307692,,239.0,45
+Saddle-Node|seed=1|sigma=0.100,Saddle-Node,1,0.1,B5 Basin Stability,0.7595228113997438,0.24666666666666667,0.9965277777777777,165.0,239.0,60
+Saddle-Node|seed=2|sigma=0.100,Saddle-Node,2,0.1,S_t,0.9192131699289051,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=2|sigma=0.100,Saddle-Node,2,0.1,B1 Rolling Variance,0.06427061310782241,0.0,0.8111888111888111,244.0,239.0,57
+Saddle-Node|seed=2|sigma=0.100,Saddle-Node,2,0.1,B2 Rolling AC1,0.06257928118393234,0.0,0.7377622377622378,,239.0,57
+Saddle-Node|seed=2|sigma=0.100,Saddle-Node,2,0.1,B3 Rolling Skewness,-0.3090909090909091,0.0,0.4580419580419581,,239.0,57
+Saddle-Node|seed=2|sigma=0.100,Saddle-Node,2,0.1,B4 DFA,-0.3581378299120234,0.0,0.9182692307692307,,239.0,45
+Saddle-Node|seed=2|sigma=0.100,Saddle-Node,2,0.1,B5 Basin Stability,0.8348284960248836,0.21333333333333335,1.0,175.0,239.0,60
+Saddle-Node|seed=3|sigma=0.100,Saddle-Node,3,0.1,S_t,0.9197859321591981,0.33,0.9800347222222222,140.0,239.0,60
+Saddle-Node|seed=3|sigma=0.100,Saddle-Node,3,0.1,B1 Rolling Variance,-0.25496828752642703,0.0,0.6223776223776224,,239.0,57
+Saddle-Node|seed=3|sigma=0.100,Saddle-Node,3,0.1,B2 Rolling AC1,-0.0897815362931642,0.0,0.5157342657342657,,239.0,57
+Saddle-Node|seed=3|sigma=0.100,Saddle-Node,3,0.1,B3 Rolling Skewness,0.1558844256518675,0.0,0.3531468531468531,,239.0,57
+Saddle-Node|seed=3|sigma=0.100,Saddle-Node,3,0.1,B4 DFA,-0.2925219941348973,0.0,0.4783653846153846,,239.0,45
+Saddle-Node|seed=3|sigma=0.100,Saddle-Node,3,0.1,B5 Basin Stability,0.8073854205768595,0.18,0.9887152777777778,185.0,239.0,60
+Saddle-Node|seed=4|sigma=0.100,Saddle-Node,4,0.1,S_t,0.9219158657860533,0.33,0.9878472222222221,140.0,239.0,60
+Saddle-Node|seed=4|sigma=0.100,Saddle-Node,4,0.1,B1 Rolling Variance,0.20577871740662437,0.5166666666666667,0.4143356643356643,84.0,239.0,57
+Saddle-Node|seed=4|sigma=0.100,Saddle-Node,4,0.1,B2 Rolling AC1,0.15602536997885835,0.5166666666666667,0.40034965034965037,84.0,239.0,57
+Saddle-Node|seed=4|sigma=0.100,Saddle-Node,4,0.1,B3 Rolling Skewness,0.04284707540521494,0.0,0.3548951048951049,,239.0,57
+Saddle-Node|seed=4|sigma=0.100,Saddle-Node,4,0.1,B4 DFA,0.5557184750733136,0.0,0.15384615384615385,,239.0,45
+Saddle-Node|seed=4|sigma=0.100,Saddle-Node,4,0.1,B5 Basin Stability,0.8494592089494519,0.28,0.9930555555555556,155.0,239.0,60
+Saddle-Node|seed=5|sigma=0.100,Saddle-Node,5,0.1,S_t,0.9187217029404621,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=5|sigma=0.100,Saddle-Node,5,0.1,B1 Rolling Variance,0.009725158562367865,0.36666666666666664,0.6573426573426573,129.0,239.0,57
+Saddle-Node|seed=5|sigma=0.100,Saddle-Node,5,0.1,B2 Rolling AC1,0.04792107117688513,0.0,0.6433566433566433,,239.0,57
+Saddle-Node|seed=5|sigma=0.100,Saddle-Node,5,0.1,B3 Rolling Skewness,-0.0536997885835095,0.0,0.7307692307692307,,239.0,57
+Saddle-Node|seed=5|sigma=0.100,Saddle-Node,5,0.1,B4 DFA,0.41129032258064513,0.35,0.6562500000000001,134.0,239.0,45
+Saddle-Node|seed=5|sigma=0.100,Saddle-Node,5,0.1,B5 Basin Stability,0.8479026088170701,0.2633333333333333,1.0,160.0,239.0,60
+Saddle-Node|seed=6|sigma=0.100,Saddle-Node,6,0.1,S_t,0.9196877399659168,0.33,0.9913194444444444,140.0,239.0,60
+Saddle-Node|seed=6|sigma=0.100,Saddle-Node,6,0.1,B1 Rolling Variance,-0.17533474277660324,0.26666666666666666,0.38286713286713286,159.0,239.0,57
+Saddle-Node|seed=6|sigma=0.100,Saddle-Node,6,0.1,B2 Rolling AC1,-0.13121916842847076,0.0,0.40384615384615374,,239.0,57
+Saddle-Node|seed=6|sigma=0.100,Saddle-Node,6,0.1,B3 Rolling Skewness,-0.07357293868921776,0.0,0.47027972027972026,,239.0,57
+Saddle-Node|seed=6|sigma=0.100,Saddle-Node,6,0.1,B4 DFA,0.006231671554252198,0.0,0.06490384615384615,,239.0,45
+Saddle-Node|seed=6|sigma=0.100,Saddle-Node,6,0.1,B5 Basin Stability,0.8417418478534249,0.24666666666666667,1.0,165.0,239.0,60
+Saddle-Node|seed=7|sigma=0.100,Saddle-Node,7,0.1,S_t,0.9133739101300961,0.33,0.9947916666666666,140.0,239.0,60
+Saddle-Node|seed=7|sigma=0.100,Saddle-Node,7,0.1,B1 Rolling Variance,-0.29034531360112753,0.3333333333333333,0.506993006993007,139.0,239.0,57
+Saddle-Node|seed=7|sigma=0.100,Saddle-Node,7,0.1,B2 Rolling AC1,-0.19393939393939394,0.0,0.5297202797202798,,239.0,57
+Saddle-Node|seed=7|sigma=0.100,Saddle-Node,7,0.1,B3 Rolling Skewness,-0.5291050035236081,0.0,0.3566433566433566,,239.0,57
+Saddle-Node|seed=7|sigma=0.100,Saddle-Node,7,0.1,B4 DFA,0.5087976539589443,0.31666666666666665,0.18509615384615383,144.0,239.0,45
+Saddle-Node|seed=7|sigma=0.100,Saddle-Node,7,0.1,B5 Basin Stability,0.8314897914355098,0.2966666666666667,1.0,150.0,239.0,60
+Saddle-Node|seed=8|sigma=0.100,Saddle-Node,8,0.1,S_t,0.9141734113627462,0.33,1.0,140.0,239.0,60
+Saddle-Node|seed=8|sigma=0.100,Saddle-Node,8,0.1,B1 Rolling Variance,0.17237491190979562,0.36666666666666664,0.28146853146853146,129.0,239.0,57
+Saddle-Node|seed=8|sigma=0.100,Saddle-Node,8,0.1,B2 Rolling AC1,0.231430584918957,0.0,0.35139860139860135,,239.0,57
+Saddle-Node|seed=8|sigma=0.100,Saddle-Node,8,0.1,B3 Rolling Skewness,-0.308245243128964,0.0,0.270979020979021,,239.0,57
+Saddle-Node|seed=8|sigma=0.100,Saddle-Node,8,0.1,B4 DFA,0.8178152492668621,0.15,0.4254807692307693,194.0,239.0,45
+Saddle-Node|seed=8|sigma=0.100,Saddle-Node,8,0.1,B5 Basin Stability,0.8668520754787494,0.31333333333333335,1.0,145.0,239.0,60
+Saddle-Node|seed=9|sigma=0.100,Saddle-Node,9,0.1,S_t,0.9094772039783546,0.33,0.9913194444444444,140.0,239.0,60
+Saddle-Node|seed=9|sigma=0.100,Saddle-Node,9,0.1,B1 Rolling Variance,-0.12755461592670894,0.0,0.4143356643356643,,239.0,57
+Saddle-Node|seed=9|sigma=0.100,Saddle-Node,9,0.1,B2 Rolling AC1,-0.04862579281183932,0.0,0.534965034965035,,239.0,57
+Saddle-Node|seed=9|sigma=0.100,Saddle-Node,9,0.1,B3 Rolling Skewness,-0.017758985200845664,0.0,0.596153846153846,,239.0,57
+Saddle-Node|seed=9|sigma=0.100,Saddle-Node,9,0.1,B4 DFA,-0.23020527859237536,0.0,0.3317307692307692,,239.0,45
+Saddle-Node|seed=9|sigma=0.100,Saddle-Node,9,0.1,B5 Basin Stability,0.870976176974499,0.28,0.9982638888888888,155.0,239.0,60
+Double-Well|seed=0|sigma=0.100,Double-Well,0,0.1,S_t,0.3497910870710719,0.4475,0.23080241587575498,125.0,304.0,80
+Double-Well|seed=0|sigma=0.100,Double-Well,0,0.1,B1 Rolling Variance,-0.2717785843920145,0.0,0.37368421052631573,,304.0,77
+Double-Well|seed=0|sigma=0.100,Double-Well,0,0.1,B2 Rolling AC1,-0.17319159968887735,0.0,0.487719298245614,,304.0,77
+Double-Well|seed=0|sigma=0.100,Double-Well,0,0.1,B3 Rolling Skewness,-0.07920663728286233,0.0,0.5815789473684211,,304.0,77
+Double-Well|seed=0|sigma=0.100,Double-Well,0,0.1,B4 DFA,-0.39196310935441364,0.0,0.28777777777777774,,304.0,65
+Double-Well|seed=0|sigma=0.100,Double-Well,0,0.1,B5 Basin Stability,0.3490829377187178,0.4475,0.24633304572907683,125.0,304.0,80
+Double-Well|seed=1|sigma=0.100,Double-Well,1,0.1,S_t,0.9532273082247161,0.535,0.8011216566005176,90.0,304.0,80
+Double-Well|seed=1|sigma=0.100,Double-Well,1,0.1,B1 Rolling Variance,0.15964480165932074,0.0,0.48771929824561405,344.0,304.0,77
+Double-Well|seed=1|sigma=0.100,Double-Well,1,0.1,B2 Rolling AC1,-0.10526315789473686,0.0,0.4780701754385965,,304.0,77
+Double-Well|seed=1|sigma=0.100,Double-Well,1,0.1,B3 Rolling Skewness,0.14596836919885922,0.1125,0.4096491228070175,259.0,304.0,77
+Double-Well|seed=1|sigma=0.100,Double-Well,1,0.1,B4 DFA,0.3372859025032938,0.0,0.45222222222222225,,304.0,65
+Double-Well|seed=1|sigma=0.100,Double-Well,1,0.1,B5 Basin Stability,0.9356941907610009,0.535,0.7959447799827438,90.0,304.0,80
+Double-Well|seed=2|sigma=0.100,Double-Well,2,0.1,S_t,0.7786211224840225,0.3975,0.7709232096635029,145.0,304.0,80
+Double-Well|seed=2|sigma=0.100,Double-Well,2,0.1,B1 Rolling Variance,0.14272750842623802,0.325,0.6394736842105263,174.0,304.0,77
+Double-Well|seed=2|sigma=0.100,Double-Well,2,0.1,B2 Rolling AC1,0.16742286751361166,0.0,0.6166666666666667,,304.0,77
+Double-Well|seed=2|sigma=0.100,Double-Well,2,0.1,B3 Rolling Skewness,-0.27067669172932335,0.0,0.5114035087719299,,304.0,77
+Double-Well|seed=2|sigma=0.100,Double-Well,2,0.1,B4 DFA,0.3334650856389986,0.0,0.63,,304.0,65
+Double-Well|seed=2|sigma=0.100,Double-Well,2,0.1,B5 Basin Stability,0.7877883141116975,0.3725,0.7890422778257118,155.0,304.0,80
+Double-Well|seed=3|sigma=0.100,Double-Well,3,0.1,S_t,0.8674919037296823,0.5725,0.8106125970664366,75.0,304.0,80
+Double-Well|seed=3|sigma=0.100,Double-Well,3,0.1,B1 Rolling Variance,0.059242934923515685,0.1375,0.537719298245614,249.0,304.0,77
+Double-Well|seed=3|sigma=0.100,Double-Well,3,0.1,B2 Rolling AC1,-0.013935701322271196,0.0,0.4473684210526316,,304.0,77
+Double-Well|seed=3|sigma=0.100,Double-Well,3,0.1,B3 Rolling Skewness,0.00311122634171636,0.0,0.38421052631578945,,304.0,77
+Double-Well|seed=3|sigma=0.100,Double-Well,3,0.1,B4 DFA,0.20606060606060603,0.0,0.3555555555555555,,304.0,65
+Double-Well|seed=3|sigma=0.100,Double-Well,3,0.1,B5 Basin Stability,0.7850124322343122,0.235,0.82053494391717,210.0,304.0,80
+Double-Well|seed=4|sigma=0.100,Double-Well,4,0.1,S_t,0.8420356791647031,0.385,0.9767040552200172,150.0,304.0,80
+Double-Well|seed=4|sigma=0.100,Double-Well,4,0.1,B1 Rolling Variance,-0.07006740990407054,0.0125,0.5578947368421052,299.0,304.0,77
+Double-Well|seed=4|sigma=0.100,Double-Well,4,0.1,B2 Rolling AC1,-0.07875291677469537,0.0,0.5657894736842105,,304.0,77
+Double-Well|seed=4|sigma=0.100,Double-Well,4,0.1,B3 Rolling Skewness,-0.10331864143116412,0.0,0.4728070175438596,,304.0,77
+Double-Well|seed=4|sigma=0.100,Double-Well,4,0.1,B4 DFA,-0.21581027667984187,0.0,0.7844444444444445,314.0,304.0,65
+Double-Well|seed=4|sigma=0.100,Double-Well,4,0.1,B5 Basin Stability,0.8510143447789951,0.1725,0.9827437446074202,235.0,304.0,80
+Double-Well|seed=5|sigma=0.100,Double-Well,5,0.1,S_t,0.4115990381727456,0.51,0.8093183779119931,100.0,304.0,80
+Double-Well|seed=5|sigma=0.100,Double-Well,5,0.1,B1 Rolling Variance,0.023658283640134822,0.4375,0.6,129.0,304.0,77
+Double-Well|seed=5|sigma=0.100,Double-Well,5,0.1,B2 Rolling AC1,0.0705211304122375,0.0,0.5692982456140351,,304.0,77
+Double-Well|seed=5|sigma=0.100,Double-Well,5,0.1,B3 Rolling Skewness,0.2282214156079855,0.0,0.47631578947368425,,304.0,77
+Double-Well|seed=5|sigma=0.100,Double-Well,5,0.1,B4 DFA,0.26745718050065875,0.0,0.6244444444444444,,304.0,65
+Double-Well|seed=5|sigma=0.100,Double-Well,5,0.1,B5 Basin Stability,0.398556004939748,0.51,0.8382226056945643,100.0,304.0,80
+Double-Well|seed=6|sigma=0.100,Double-Well,6,0.1,S_t,0.40808771338736394,0.11,0.9620362381363243,260.0,304.0,80
+Double-Well|seed=6|sigma=0.100,Double-Well,6,0.1,B1 Rolling Variance,0.07233601244490537,0.1,0.4070175438596491,264.0,304.0,77
+Double-Well|seed=6|sigma=0.100,Double-Well,6,0.1,B2 Rolling AC1,-0.008491055224267565,0.0,0.4526315789473684,,304.0,77
+Double-Well|seed=6|sigma=0.100,Double-Well,6,0.1,B3 Rolling Skewness,-0.13540316308011408,0.0,0.44999999999999996,,304.0,77
+Double-Well|seed=6|sigma=0.100,Double-Well,6,0.1,B4 DFA,-0.15928853754940708,0.0,0.5522222222222222,,304.0,65
+Double-Well|seed=6|sigma=0.100,Double-Well,6,0.1,B5 Basin Stability,0.3780867211087943,0.11,0.9745470232959449,260.0,304.0,80
+Double-Well|seed=7|sigma=0.100,Double-Well,7,0.1,S_t,0.5690482982010708,0.535,0.7027610008628128,90.0,304.0,80
+Double-Well|seed=7|sigma=0.100,Double-Well,7,0.1,B1 Rolling Variance,-0.16904329789992223,0.4,0.587719298245614,144.0,304.0,77
+Double-Well|seed=7|sigma=0.100,Double-Well,7,0.1,B2 Rolling AC1,-0.020417422867513614,0.0,0.5307017543859649,,304.0,77
+Double-Well|seed=7|sigma=0.100,Double-Well,7,0.1,B3 Rolling Skewness,-0.38546798029556656,0.0,0.5324561403508772,,304.0,77
+Double-Well|seed=7|sigma=0.100,Double-Well,7,0.1,B4 DFA,-0.14664031620553358,0.4,0.4388888888888889,144.0,304.0,65
+Double-Well|seed=7|sigma=0.100,Double-Well,7,0.1,B5 Basin Stability,0.5404491301428226,0.51,0.7342536669542709,100.0,304.0,80
+Double-Well|seed=8|sigma=0.100,Double-Well,8,0.1,S_t,0.28274788269368006,0.5725,0.8412424503882657,75.0,304.0,80
+Double-Well|seed=8|sigma=0.100,Double-Well,8,0.1,B1 Rolling Variance,-0.2743712730101115,0.0,0.462280701754386,,304.0,77
+Double-Well|seed=8|sigma=0.100,Double-Well,8,0.1,B2 Rolling AC1,-0.16833030852994557,0.0,0.46228070175438596,,304.0,77
+Double-Well|seed=8|sigma=0.100,Double-Well,8,0.1,B3 Rolling Skewness,-0.46078558465128344,0.0,0.4,,304.0,77
+Double-Well|seed=8|sigma=0.100,Double-Well,8,0.1,B4 DFA,-0.014229249011857705,0.275,0.4488888888888889,194.0,304.0,65
+Double-Well|seed=8|sigma=0.100,Double-Well,8,0.1,B5 Basin Stability,0.13512089991984527,0.51,0.8619499568593616,100.0,304.0,80
+Double-Well|seed=9|sigma=0.100,Double-Well,9,0.1,S_t,0.9037393671706971,0.4475,0.9184641932700603,125.0,304.0,80
+Double-Well|seed=9|sigma=0.100,Double-Well,9,0.1,B1 Rolling Variance,-0.05172413793103449,0.0,0.27280701754385966,,304.0,77
+Double-Well|seed=9|sigma=0.100,Double-Well,9,0.1,B2 Rolling AC1,0.07739175525019446,0.0,0.35964912280701755,,304.0,77
+Double-Well|seed=9|sigma=0.100,Double-Well,9,0.1,B3 Rolling Skewness,-0.054770547057298426,0.0,0.3640350877192982,,304.0,77
+Double-Well|seed=9|sigma=0.100,Double-Well,9,0.1,B4 DFA,-0.3733860342555994,0.0,0.5155555555555555,,304.0,65
+Double-Well|seed=9|sigma=0.100,Double-Well,9,0.1,B5 Basin Stability,0.8996522538935129,0.4475,0.9374460742018981,125.0,304.0,80
+Ecosystem|seed=0|sigma=0.100,Ecosystem,0,0.1,S_t,0.889327707016192,0.4725,,190.0,379.0,80
+Ecosystem|seed=0|sigma=0.100,Ecosystem,0,0.1,B1 Rolling Variance,-0.06785002250948616,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.100,Ecosystem,0,0.1,B2 Rolling AC1,0.05093575149527302,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.100,Ecosystem,0,0.1,B3 Rolling Skewness,0.034793234291594324,0.0,,,379.0,77
+Ecosystem|seed=0|sigma=0.100,Ecosystem,0,0.1,B4 DFA,-0.17677132536815787,0.0,,,379.0,65
+Ecosystem|seed=0|sigma=0.100,Ecosystem,0,0.1,B5 Basin Stability,0.9362925758120971,0.485,,185.0,379.0,80
+Ecosystem|seed=1|sigma=0.100,Ecosystem,1,0.1,S_t,0.888029148869077,0.4,,240.0,400.0,80
+Ecosystem|seed=1|sigma=0.100,Ecosystem,1,0.1,B1 Rolling Variance,0.22803512277196486,0.4775,,209.0,400.0,77
+Ecosystem|seed=1|sigma=0.100,Ecosystem,1,0.1,B2 Rolling AC1,0.04966086545033913,0.0,,,400.0,77
+Ecosystem|seed=1|sigma=0.100,Ecosystem,1,0.1,B3 Rolling Skewness,0.033177348966822645,0.0,,,400.0,77
+Ecosystem|seed=1|sigma=0.100,Ecosystem,1,0.1,B4 DFA,0.35712412587412584,0.04,,384.0,400.0,65
+Ecosystem|seed=1|sigma=0.100,Ecosystem,1,0.1,B5 Basin Stability,0.9171294291701916,0.4875,,205.0,400.0,80
+Ecosystem|seed=2|sigma=0.100,Ecosystem,2,0.1,S_t,0.8655641928783172,0.4125,,235.0,400.0,80
+Ecosystem|seed=2|sigma=0.100,Ecosystem,2,0.1,B1 Rolling Variance,0.10200325989799672,0.39,,244.0,400.0,77
+Ecosystem|seed=2|sigma=0.100,Ecosystem,2,0.1,B2 Rolling AC1,0.0873862979126137,0.0,,,400.0,77
+Ecosystem|seed=2|sigma=0.100,Ecosystem,2,0.1,B3 Rolling Skewness,-0.19985277880014723,0.0,,,400.0,77
+Ecosystem|seed=2|sigma=0.100,Ecosystem,2,0.1,B4 DFA,0.1888111888111888,0.0,,,400.0,65
+Ecosystem|seed=2|sigma=0.100,Ecosystem,2,0.1,B5 Basin Stability,0.8819119033828754,0.4,,240.0,400.0,80
+Ecosystem|seed=3|sigma=0.100,Ecosystem,3,0.1,S_t,0.8445226679594001,0.325,,260.0,390.0,80
+Ecosystem|seed=3|sigma=0.100,Ecosystem,3,0.1,B1 Rolling Variance,0.1663726884779516,0.0025,,389.0,390.0,77
+Ecosystem|seed=3|sigma=0.100,Ecosystem,3,0.1,B2 Rolling AC1,0.027368421052631577,0.0,,,390.0,77
+Ecosystem|seed=3|sigma=0.100,Ecosystem,3,0.1,B3 Rolling Skewness,-0.17951635846372688,0.0,,,390.0,77
+Ecosystem|seed=3|sigma=0.100,Ecosystem,3,0.1,B4 DFA,0.042194700460829494,0.0,,,390.0,65
+Ecosystem|seed=3|sigma=0.100,Ecosystem,3,0.1,B5 Basin Stability,0.8683050986857802,0.2875,,275.0,390.0,80
+Ecosystem|seed=4|sigma=0.100,Ecosystem,4,0.1,S_t,0.8887702339444963,0.375,,250.0,400.0,80
+Ecosystem|seed=4|sigma=0.100,Ecosystem,4,0.1,B1 Rolling Variance,0.11533203638466795,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.100,Ecosystem,4,0.1,B2 Rolling AC1,0.03898732846101267,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.100,Ecosystem,4,0.1,B3 Rolling Skewness,-0.021846574478153424,0.0,,,400.0,77
+Ecosystem|seed=4|sigma=0.100,Ecosystem,4,0.1,B4 DFA,0.1638986013986014,0.0,,,400.0,65
+Ecosystem|seed=4|sigma=0.100,Ecosystem,4,0.1,B5 Basin Stability,0.9193063478405861,0.55,,180.0,400.0,80
+Ecosystem|seed=5|sigma=0.100,Ecosystem,5,0.1,S_t,0.9134028453232641,0.4625,,215.0,400.0,80
+Ecosystem|seed=5|sigma=0.100,Ecosystem,5,0.1,B1 Rolling Variance,0.07395236342604763,0.6775,,129.0,400.0,77
+Ecosystem|seed=5|sigma=0.100,Ecosystem,5,0.1,B2 Rolling AC1,0.059203953940796035,0.0,,,400.0,77
+Ecosystem|seed=5|sigma=0.100,Ecosystem,5,0.1,B3 Rolling Skewness,-0.008728113991271885,0.0,,,400.0,77
+Ecosystem|seed=5|sigma=0.100,Ecosystem,5,0.1,B4 DFA,0.23024475524475524,0.265,,294.0,400.0,65
+Ecosystem|seed=5|sigma=0.100,Ecosystem,5,0.1,B5 Basin Stability,0.9479872539089627,0.5375,,185.0,400.0,80
+Ecosystem|seed=6|sigma=0.100,Ecosystem,6,0.1,S_t,0.8896694741007711,0.375,,250.0,400.0,80
+Ecosystem|seed=6|sigma=0.100,Ecosystem,6,0.1,B1 Rolling Variance,-0.09974236290025763,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.100,Ecosystem,6,0.1,B2 Rolling AC1,-0.13163152636836845,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.100,Ecosystem,6,0.1,B3 Rolling Skewness,0.004758399495241599,0.0,,,400.0,77
+Ecosystem|seed=6|sigma=0.100,Ecosystem,6,0.1,B4 DFA,-0.16656468531468532,0.0,,,400.0,65
+Ecosystem|seed=6|sigma=0.100,Ecosystem,6,0.1,B5 Basin Stability,0.939831730546743,0.575,,170.0,400.0,80
+Ecosystem|seed=7|sigma=0.100,Ecosystem,7,0.1,S_t,0.8968832233483703,0.425,,215.0,385.0,80
+Ecosystem|seed=7|sigma=0.100,Ecosystem,7,0.1,B1 Rolling Variance,0.19683080340614587,0.615,,139.0,385.0,77
+Ecosystem|seed=7|sigma=0.100,Ecosystem,7,0.1,B2 Rolling AC1,0.20435394298407994,0.0,,,385.0,77
+Ecosystem|seed=7|sigma=0.100,Ecosystem,7,0.1,B3 Rolling Skewness,-0.213802295446131,0.0,,,385.0,77
+Ecosystem|seed=7|sigma=0.100,Ecosystem,7,0.1,B4 DFA,0.020271461307949937,0.6025,,144.0,385.0,65
+Ecosystem|seed=7|sigma=0.100,Ecosystem,7,0.1,B5 Basin Stability,0.9208488542488867,0.5,,185.0,385.0,80
+Ecosystem|seed=8|sigma=0.100,Ecosystem,8,0.1,S_t,0.9029600055502134,0.4125,,235.0,400.0,80
+Ecosystem|seed=8|sigma=0.100,Ecosystem,8,0.1,B1 Rolling Variance,-0.19801251380198748,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.100,Ecosystem,8,0.1,B2 Rolling AC1,-0.19141384930858613,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.100,Ecosystem,8,0.1,B3 Rolling Skewness,-0.32109995267889996,0.0,,,400.0,77
+Ecosystem|seed=8|sigma=0.100,Ecosystem,8,0.1,B4 DFA,-0.09178321678321678,0.465,,214.0,400.0,65
+Ecosystem|seed=8|sigma=0.100,Ecosystem,8,0.1,B5 Basin Stability,0.9474597461347174,0.575,,170.0,400.0,80
+Ecosystem|seed=9|sigma=0.100,Ecosystem,9,0.1,S_t,0.8949669062961578,0.375,,250.0,400.0,80
+Ecosystem|seed=9|sigma=0.100,Ecosystem,9,0.1,B1 Rolling Variance,-0.20413796729586203,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.100,Ecosystem,9,0.1,B2 Rolling AC1,-0.05118565644881434,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.100,Ecosystem,9,0.1,B3 Rolling Skewness,-0.1316578158683422,0.0,,,400.0,77
+Ecosystem|seed=9|sigma=0.100,Ecosystem,9,0.1,B4 DFA,0.07194055944055945,0.0,,,400.0,65
+Ecosystem|seed=9|sigma=0.100,Ecosystem,9,0.1,B5 Basin Stability,0.9201150615936099,0.6,,160.0,400.0,80
+Saddle-Node|seed=0|sigma=0.030,Saddle-Node,0,0.03,Cox PH (hazard),-0.9848024316109422,0.0,0.0,,239.0,60
+Saddle-Node|seed=1|sigma=0.030,Saddle-Node,1,0.03,Cox PH (hazard),-0.9980460269214069,0.0,0.006944444444444445,,239.0,60
+Saddle-Node|seed=2|sigma=0.030,Saddle-Node,2,0.03,Cox PH (hazard),-0.9984802431610943,0.0,0.029513888888888885,,239.0,60
+Saddle-Node|seed=3|sigma=0.030,Saddle-Node,3,0.03,Cox PH (hazard),-0.9970690403821102,0.0,0.0,,239.0,60
+Saddle-Node|seed=4|sigma=0.030,Saddle-Node,4,0.03,Cox PH (hazard),-0.9980460269214069,0.0,0.0,,239.0,60
+Saddle-Node|seed=5|sigma=0.030,Saddle-Node,5,0.03,Cox PH (hazard),-0.9946808510638298,0.0,0.008680555555555554,,239.0,60
+Saddle-Node|seed=6|sigma=0.030,Saddle-Node,6,0.03,Cox PH (hazard),-0.9969604863221885,0.0,0.0,,239.0,60
+Saddle-Node|seed=7|sigma=0.030,Saddle-Node,7,0.03,Cox PH (hazard),-0.9942466348241424,0.0,0.0,,239.0,60
+Saddle-Node|seed=8|sigma=0.030,Saddle-Node,8,0.03,Cox PH (hazard),-0.9973947025618759,0.0,0.0,,239.0,60
+Saddle-Node|seed=9|sigma=0.030,Saddle-Node,9,0.03,Cox PH (hazard),-0.9951150673035171,0.0,0.0,,239.0,60
+Double-Well|seed=0|sigma=0.030,Double-Well,0,0.03,Cox PH (hazard),-0.9632469592808036,0.0,0.0,,304.0,80
+Double-Well|seed=1|sigma=0.030,Double-Well,1,0.03,Cox PH (hazard),-0.9763617133791642,0.0,0.0,,304.0,80
+Double-Well|seed=2|sigma=0.030,Double-Well,2,0.03,Cox PH (hazard),-0.9906398730830246,0.0,0.0,,304.0,80
+Double-Well|seed=3|sigma=0.030,Double-Well,3,0.03,Cox PH (hazard),-0.9154944473823371,0.0,0.09490940465918897,,304.0,80
+Double-Well|seed=4|sigma=0.030,Double-Well,4,0.03,Cox PH (hazard),-0.9928080380750923,0.0,0.09404659188955997,,304.0,80
+Double-Well|seed=5|sigma=0.030,Double-Well,5,0.03,Cox PH (hazard),-0.9947117927022738,0.0,0.0,,304.0,80
+Double-Well|seed=6|sigma=0.030,Double-Well,6,0.03,Cox PH (hazard),-0.9876255949233207,0.0,0.012079378774805869,,304.0,80
+Double-Well|seed=7|sigma=0.030,Double-Well,7,0.03,Cox PH (hazard),-0.991909042834479,0.0,0.0,,304.0,80
+Double-Well|seed=8|sigma=0.030,Double-Well,8,0.03,Cox PH (hazard),-0.9965097831835007,0.0,0.0,,304.0,80
+Double-Well|seed=9|sigma=0.030,Double-Well,9,0.03,Cox PH (hazard),-0.9882072977260706,0.0,0.0008628127696289914,,304.0,80
+Ecosystem|seed=0|sigma=0.030,Ecosystem,0,0.03,Cox PH (hazard),-0.9999726589200273,0.0,,,379.0,80
+Ecosystem|seed=1|sigma=0.030,Ecosystem,1,0.03,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=2|sigma=0.030,Ecosystem,2,0.03,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=3|sigma=0.030,Ecosystem,3,0.03,Cox PH (hazard),-0.9999999999999999,0.0,,,390.0,80
+Ecosystem|seed=4|sigma=0.030,Ecosystem,4,0.03,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=5|sigma=0.030,Ecosystem,5,0.03,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=6|sigma=0.030,Ecosystem,6,0.03,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=7|sigma=0.030,Ecosystem,7,0.03,Cox PH (hazard),-1.0,0.0,,,385.0,80
+Ecosystem|seed=8|sigma=0.030,Ecosystem,8,0.03,Cox PH (hazard),-0.9999765588373184,0.0,,,400.0,80
+Ecosystem|seed=9|sigma=0.030,Ecosystem,9,0.03,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Saddle-Node|seed=0|sigma=0.050,Saddle-Node,0,0.05,Cox PH (hazard),-0.9848024316109422,0.0,0.0,,239.0,60
+Saddle-Node|seed=1|sigma=0.050,Saddle-Node,1,0.05,Cox PH (hazard),-0.9980460269214069,0.0,0.006944444444444445,,239.0,60
+Saddle-Node|seed=2|sigma=0.050,Saddle-Node,2,0.05,Cox PH (hazard),-0.9984802431610943,0.0,0.029513888888888885,,239.0,60
+Saddle-Node|seed=3|sigma=0.050,Saddle-Node,3,0.05,Cox PH (hazard),-0.9970690403821102,0.0,0.0,,239.0,60
+Saddle-Node|seed=4|sigma=0.050,Saddle-Node,4,0.05,Cox PH (hazard),-0.9980460269214069,0.0,0.0,,239.0,60
+Saddle-Node|seed=5|sigma=0.050,Saddle-Node,5,0.05,Cox PH (hazard),-0.9946808510638298,0.0,0.008680555555555554,,239.0,60
+Saddle-Node|seed=6|sigma=0.050,Saddle-Node,6,0.05,Cox PH (hazard),-0.9969604863221885,0.0,0.0,,239.0,60
+Saddle-Node|seed=7|sigma=0.050,Saddle-Node,7,0.05,Cox PH (hazard),-0.9942466348241424,0.0,0.0,,239.0,60
+Saddle-Node|seed=8|sigma=0.050,Saddle-Node,8,0.05,Cox PH (hazard),-0.9973947025618759,0.0,0.0,,239.0,60
+Saddle-Node|seed=9|sigma=0.050,Saddle-Node,9,0.05,Cox PH (hazard),-0.9951150673035171,0.0,0.0,,239.0,60
+Double-Well|seed=0|sigma=0.050,Double-Well,0,0.05,Cox PH (hazard),-0.9632469592808036,0.0,0.0,,304.0,80
+Double-Well|seed=1|sigma=0.050,Double-Well,1,0.05,Cox PH (hazard),-0.9763617133791642,0.0,0.0,,304.0,80
+Double-Well|seed=2|sigma=0.050,Double-Well,2,0.05,Cox PH (hazard),-0.9906398730830246,0.0,0.0,,304.0,80
+Double-Well|seed=3|sigma=0.050,Double-Well,3,0.05,Cox PH (hazard),-0.9154944473823371,0.0,0.09490940465918897,,304.0,80
+Double-Well|seed=4|sigma=0.050,Double-Well,4,0.05,Cox PH (hazard),-0.9928080380750923,0.0,0.09404659188955997,,304.0,80
+Double-Well|seed=5|sigma=0.050,Double-Well,5,0.05,Cox PH (hazard),-0.9947117927022738,0.0,0.0,,304.0,80
+Double-Well|seed=6|sigma=0.050,Double-Well,6,0.05,Cox PH (hazard),-0.9876255949233207,0.0,0.012079378774805869,,304.0,80
+Double-Well|seed=7|sigma=0.050,Double-Well,7,0.05,Cox PH (hazard),-0.991909042834479,0.0,0.0,,304.0,80
+Double-Well|seed=8|sigma=0.050,Double-Well,8,0.05,Cox PH (hazard),-0.9965097831835007,0.0,0.0,,304.0,80
+Double-Well|seed=9|sigma=0.050,Double-Well,9,0.05,Cox PH (hazard),-0.9882072977260706,0.0,0.0008628127696289914,,304.0,80
+Ecosystem|seed=0|sigma=0.050,Ecosystem,0,0.05,Cox PH (hazard),-0.9999726589200273,0.0,,,379.0,80
+Ecosystem|seed=1|sigma=0.050,Ecosystem,1,0.05,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=2|sigma=0.050,Ecosystem,2,0.05,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=3|sigma=0.050,Ecosystem,3,0.05,Cox PH (hazard),-0.9999999999999999,0.0,,,390.0,80
+Ecosystem|seed=4|sigma=0.050,Ecosystem,4,0.05,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=5|sigma=0.050,Ecosystem,5,0.05,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=6|sigma=0.050,Ecosystem,6,0.05,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=7|sigma=0.050,Ecosystem,7,0.05,Cox PH (hazard),-1.0,0.0,,,385.0,80
+Ecosystem|seed=8|sigma=0.050,Ecosystem,8,0.05,Cox PH (hazard),-0.9999765588373184,0.0,,,400.0,80
+Ecosystem|seed=9|sigma=0.050,Ecosystem,9,0.05,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Saddle-Node|seed=0|sigma=0.100,Saddle-Node,0,0.1,Cox PH (hazard),-0.9848024316109422,0.0,0.0,,239.0,60
+Saddle-Node|seed=1|sigma=0.100,Saddle-Node,1,0.1,Cox PH (hazard),-0.9980460269214069,0.0,0.006944444444444445,,239.0,60
+Saddle-Node|seed=2|sigma=0.100,Saddle-Node,2,0.1,Cox PH (hazard),-0.9984802431610943,0.0,0.029513888888888885,,239.0,60
+Saddle-Node|seed=3|sigma=0.100,Saddle-Node,3,0.1,Cox PH (hazard),-0.9970690403821102,0.0,0.0,,239.0,60
+Saddle-Node|seed=4|sigma=0.100,Saddle-Node,4,0.1,Cox PH (hazard),-0.9980460269214069,0.0,0.0,,239.0,60
+Saddle-Node|seed=5|sigma=0.100,Saddle-Node,5,0.1,Cox PH (hazard),-0.9946808510638298,0.0,0.008680555555555554,,239.0,60
+Saddle-Node|seed=6|sigma=0.100,Saddle-Node,6,0.1,Cox PH (hazard),-0.9969604863221885,0.0,0.0,,239.0,60
+Saddle-Node|seed=7|sigma=0.100,Saddle-Node,7,0.1,Cox PH (hazard),-0.9942466348241424,0.0,0.0,,239.0,60
+Saddle-Node|seed=8|sigma=0.100,Saddle-Node,8,0.1,Cox PH (hazard),-0.9973947025618759,0.0,0.0,,239.0,60
+Saddle-Node|seed=9|sigma=0.100,Saddle-Node,9,0.1,Cox PH (hazard),-0.9951150673035171,0.0,0.0,,239.0,60
+Double-Well|seed=0|sigma=0.100,Double-Well,0,0.1,Cox PH (hazard),-0.9632469592808036,0.0,0.0,,304.0,80
+Double-Well|seed=1|sigma=0.100,Double-Well,1,0.1,Cox PH (hazard),-0.9763617133791642,0.0,0.0,,304.0,80
+Double-Well|seed=2|sigma=0.100,Double-Well,2,0.1,Cox PH (hazard),-0.9906398730830246,0.0,0.0,,304.0,80
+Double-Well|seed=3|sigma=0.100,Double-Well,3,0.1,Cox PH (hazard),-0.9154944473823371,0.0,0.09490940465918897,,304.0,80
+Double-Well|seed=4|sigma=0.100,Double-Well,4,0.1,Cox PH (hazard),-0.9928080380750923,0.0,0.09404659188955997,,304.0,80
+Double-Well|seed=5|sigma=0.100,Double-Well,5,0.1,Cox PH (hazard),-0.9947117927022738,0.0,0.0,,304.0,80
+Double-Well|seed=6|sigma=0.100,Double-Well,6,0.1,Cox PH (hazard),-0.9876255949233207,0.0,0.012079378774805869,,304.0,80
+Double-Well|seed=7|sigma=0.100,Double-Well,7,0.1,Cox PH (hazard),-0.991909042834479,0.0,0.0,,304.0,80
+Double-Well|seed=8|sigma=0.100,Double-Well,8,0.1,Cox PH (hazard),-0.9965097831835007,0.0,0.0,,304.0,80
+Double-Well|seed=9|sigma=0.100,Double-Well,9,0.1,Cox PH (hazard),-0.9882072977260706,0.0,0.0008628127696289914,,304.0,80
+Ecosystem|seed=0|sigma=0.100,Ecosystem,0,0.1,Cox PH (hazard),-0.9999726589200273,0.0,,,379.0,80
+Ecosystem|seed=1|sigma=0.100,Ecosystem,1,0.1,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=2|sigma=0.100,Ecosystem,2,0.1,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=3|sigma=0.100,Ecosystem,3,0.1,Cox PH (hazard),-0.9999999999999999,0.0,,,390.0,80
+Ecosystem|seed=4|sigma=0.100,Ecosystem,4,0.1,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=5|sigma=0.100,Ecosystem,5,0.1,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=6|sigma=0.100,Ecosystem,6,0.1,Cox PH (hazard),-1.0,0.0,,,400.0,80
+Ecosystem|seed=7|sigma=0.100,Ecosystem,7,0.1,Cox PH (hazard),-1.0,0.0,,,385.0,80
+Ecosystem|seed=8|sigma=0.100,Ecosystem,8,0.1,Cox PH (hazard),-0.9999765588373184,0.0,,,400.0,80
+Ecosystem|seed=9|sigma=0.100,Ecosystem,9,0.1,Cox PH (hazard),-1.0,0.0,,,400.0,80
