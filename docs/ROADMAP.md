@@ -4,7 +4,7 @@
 como early warning signal geométrico para transições críticas.
 
 **Início:** 14 Feb 2026
-**Submissão arXiv:** ~May 2026
+**Submissão arXiv:** ~July 2026
 **Categoria:** `nlin.CD` (Nonlinear Sciences — Chaotic Dynamics) ou `cs.LG` (Machine Learning)
 
 ---
