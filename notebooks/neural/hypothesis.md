@@ -41,3 +41,10 @@ Para fechar adequadamente as validações propostas:
 3. `03_monotonicity_scale.ipynb`: Inspecionar H3 no Dataset _Double-Well_, extraindo as métricas comparadas e rastreando justificativas do Sprint 1.
 4. `04_transfer_systems.ipynb`: Inspecionar H5, aplicando transferência sem re-treino entre *Saddle-Node* e *Double-Well*.
 5. `05_rw_inference.ipynb`: Por fim, o escalonamento em dados massivos de turbinas/máquinas verificando H4.
+--
+
+## Referencias Bibliograficas
+
+- [flow map matching](https://arxiv.org/html/2406.07507)
+- [DeepONet]
+- [???]
